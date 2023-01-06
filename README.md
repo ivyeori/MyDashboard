@@ -11,11 +11,7 @@ Download the files via
   git clone https://github.com/ivyeori/MyDashboard.git
 ```
 
-Go to folder 
-```bash
-  cd MyDashboard
-```
-
+Insert it in your htdocs folde if you use XAMPP
 Made with PHP, Bootstrap and HTML so you need anything like XAMPP to make the website work on your computer. 
 Website can be used locally and without any internet connection.
 
