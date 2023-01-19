@@ -19,6 +19,7 @@ require "protect.php";
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./assets/css/panel.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body>
