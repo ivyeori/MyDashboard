@@ -6,12 +6,12 @@ session_start();
 if (isset($_POST["logout"])) {
   setcookie("PHPSESSID", "", time() - 3600, "/");
   session_destroy();
-  header("Location: /pages/index.php");
+  header("Location: ../");
   exit;
 }
 
 // (C) REDIRECT TO LOGIN PAGE IF NOT SIGNED IN
 if (!isset($_SESSION["user"])) {
-  header("Location: login.php");
+  header("Location: index.php");
   exit();
 }

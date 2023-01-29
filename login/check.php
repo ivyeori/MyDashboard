@@ -22,6 +22,6 @@ if (isset($_POST["user"]) && !isset($_SESSION["user"])) {
 
 // (C) REDIRECT TO HOME PAGE IF SIGNED IN - SET YOUR OWN !
 if (isset($_SESSION["user"])) {
-  header("Location: index.php");
+  header("Location: ../panel");
   exit();
 }
