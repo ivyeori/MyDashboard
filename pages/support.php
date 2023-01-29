@@ -28,14 +28,14 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">MyDashboard</a></h1>
+      <h1 class="logo me-auto"><a href="index.php">MyDashboard</a></h1>
      
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="./index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="./index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="./index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="./index.php">Home</a></li>
+          <li><a class="nav-link scrollto" href="./index.php#about">About</a></li>
+          <li><a class="nav-link scrollto" href="./index.php#services">Services</a></li>
           
           
           
