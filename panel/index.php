@@ -16,7 +16,7 @@ require "../login/protect.php";
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>MyDashboard.de</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,7 +24,7 @@ require "../login/protect.php";
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    
+    <link href="../assets/css/style.css" rel="stylesheet">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
@@ -37,13 +37,7 @@ require "../login/protect.php";
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-            </a>
+            
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
@@ -51,7 +45,7 @@ require "../login/protect.php";
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" href="index.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                   <img src="../assets/img/logo.svg" alt="Dashboard" width="48" height="48"> 
                     <span>Dashboard</span></a>
             </li>
 
@@ -159,6 +153,7 @@ require "../login/protect.php";
 
             <!-- Main Content -->
             <div id="content">
+            
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -281,7 +276,7 @@ require "../login/protect.php";
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
-                                    Message Center
+                                   Nachrichten
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
@@ -290,48 +285,13 @@ require "../login/protect.php";
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
-                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
-                                            problem I've been having.</div>
-                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                        <div class="text-truncate">Sie haben 10 neue ungelese Mails</div>
+                                        <div class="small text-gray-500">System · 58m</div>
                                     </div>
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
-                                        <div class="status-indicator"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">I have the photos that you ordered last month, how
-                                            would you like them sent to you?</div>
-                                        <div class="small text-gray-500">Jae Chun · 1d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
-                                        <div class="status-indicator bg-warning"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with
-                                            the progress so far, keep up the good work!</div>
-                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
-                                            alt="...">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
-                                            told me that people say this to all dogs, even if they aren't good...</div>
-                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                                
+                                
+                              
                             </div>
                         </li>
 
@@ -399,11 +359,12 @@ require "../login/protect.php";
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                               Unread Mails</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                               Ungelesene Mails</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
                                         </div>
                                         <div class="col-auto">
-                                        <i class="fa-solid fa-envelope fa-2x text-gray-300" ></i>
+                                        <i class="fas fa-solid fa-envelope fa-2x text-gray-300" ></i>
+                                       
                                         </div>
                                     </div>
                                 </div>
@@ -446,7 +407,8 @@ require "../login/protect.php";
                                             </div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                            <i class="fas fa-solid fa-cloud fa-2x text-gray-300"></i>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -482,17 +444,15 @@ require "../login/protect.php";
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">News</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">To-Dos</h6>
                                     
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                <form action="" method="post">
-    <input type="text" name="task" placeholder="Enter a task">
-    <input type="submit" name="add" value="Add Task">
-    <input type="submit" name="delete" value="Delete Completed Tasks">
-  </form>
-  
+                                <input type="text" id="task-input" placeholder="Enter a task">
+  <button id="add-task-btn">Add Task</button>
+  <button id="delete-task-btn">Delete Completed Tasks</button>
+  <ul id="task-list"></ul>
                                 </div>
                             </div>
                         </div>
@@ -526,13 +486,13 @@ require "../login/protect.php";
                                     </div>
                                     <div class="mt-4 text-center small">
                                         <span class="mr-2">
-                                            <i class="fas fa-circle text-primary"></i> Direct
+                                            <i class="fas fa-circle text-primary"></i> Fertig
                                         </span>
                                         <span class="mr-2">
-                                            <i class="fas fa-circle text-success"></i> Social
+                                            <i class="fas fa-circle text-success"></i> In Arbeit
                                         </span>
                                         <span class="mr-2">
-                                            <i class="fas fa-circle text-info"></i> Referral
+                                            <i class="fas fa-circle text-info"></i> Nicht begonnen
                                         </span>
                                     </div>
                                 </div>
@@ -585,74 +545,7 @@ require "../login/protect.php";
                                 </div>
                             </div>
 
-                            <!-- Color System -->
-                            <div class="row">
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-primary text-white shadow">
-                                        <div class="card-body">
-                                            Primary
-                                            <div class="text-white-50 small">#4e73df</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-success text-white shadow">
-                                        <div class="card-body">
-                                            Success
-                                            <div class="text-white-50 small">#1cc88a</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-info text-white shadow">
-                                        <div class="card-body">
-                                            Info
-                                            <div class="text-white-50 small">#36b9cc</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-warning text-white shadow">
-                                        <div class="card-body">
-                                            Warning
-                                            <div class="text-white-50 small">#f6c23e</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-danger text-white shadow">
-                                        <div class="card-body">
-                                            Danger
-                                            <div class="text-white-50 small">#e74a3b</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-secondary text-white shadow">
-                                        <div class="card-body">
-                                            Secondary
-                                            <div class="text-white-50 small">#858796</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-light text-black shadow">
-                                        <div class="card-body">
-                                            Light
-                                            <div class="text-black-50 small">#f8f9fc</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-dark text-white shadow">
-                                        <div class="card-body">
-                                            Dark
-                                            <div class="text-white-50 small">#5a5c69</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                           
                         </div>
 
                         <div class="col-lg-6 mb-4">
@@ -758,7 +651,37 @@ require "../login/protect.php";
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    <script>
+    const taskInput = document.getElementById("task-input");
+    const addTaskBtn = document.getElementById("add-task-btn");
+    const deleteTaskBtn = document.getElementById("delete-task-btn");
+    const taskList = document.getElementById("task-list");
 
+    addTaskBtn.addEventListener("click", function() {
+      const task = taskInput.value;
+      if (task === "") return;
+      const taskItem = document.createElement("li");
+      const taskCheckbox = document.createElement("input");
+      taskCheckbox.type = "checkbox";
+      const taskLabel = document.createElement("label");
+      taskLabel.innerText = task;
+      taskItem.appendChild(taskCheckbox);
+      taskItem.appendChild(taskLabel);
+      taskList.appendChild(taskItem);
+      taskInput.value = "";
+    });
+
+    deleteTaskBtn.addEventListener("click", function() {
+      const taskItems = taskList.children;
+      for (let i = taskItems.length - 1; i >= 0; i--) {
+        const taskItem = taskItems[i];
+        const taskCheckbox = taskItem.firstChild;
+        if (taskCheckbox.checked) {
+          taskList.removeChild(taskItem);
+        }
+      }
+    });
+  </script>
     
 
 </body>
