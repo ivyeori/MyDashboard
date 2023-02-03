@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,10 +38,26 @@
 
 <body>
 
+<?php if (isset($_GET['logout']) && $_GET['logout'] == 1) { ?>
+    <script>
+      $(document).ready(function() {
+        $('#toast').toast('show');
+      });
+    </script>
+    <div class="toast" id="toast">
+      <div class="toast-header">
+        <strong class="mr-auto">Notice</strong>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+      </div>
+      <div class="toast-body">
+        You have been logged out.
+      </div>
+    </div>
+  <?php } ?>
  
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
-
+      
       <h1 class="logo me-auto"><a href="./">Mydashboard</a></h1>
      
 

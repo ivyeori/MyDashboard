@@ -4,10 +4,14 @@ session_start();
 
 // (B) LOGOUT REQUEST
 if (isset($_POST["logout"])) {
-  setcookie("PHPSESSID", "", time() - 3600, "/");
-  session_destroy();
-  header("Location: ../");
-  exit;
+  session_start();
+session_destroy();
+setcookie("PHPSESSID", "", time() - 3600, "/");
+header("Location: ../index.php?logout=1");
+exit();
+  
+
+  
 }
 
 // (C) REDIRECT TO LOGIN PAGE IF NOT SIGNED IN
