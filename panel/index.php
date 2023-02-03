@@ -11,7 +11,7 @@ require "../login/protect.php";
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta http-equiv="refresh" content="60">
+  
   <title>Dashboard - MyDashBoard.de</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -55,91 +55,18 @@ require "../login/protect.php";
       <ul class="d-flex align-items-center">
 
         
-        <li class="nav-item dropdown">
-
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-bell"></i>
-            <span class="badge bg-primary badge-number">4</span>
-          </a><!-- End Notification Icon -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-            <li class="dropdown-header">
-              You have 4 new notifications
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-exclamation-circle text-warning"></i>
-              <div>
-                <h4>Lorem Ipsum</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>30 min. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-x-circle text-danger"></i>
-              <div>
-                <h4>Atque rerum nesciunt</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>1 hr. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-check-circle text-success"></i>
-              <div>
-                <h4>Sit rerum fuga</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>2 hrs. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-info-circle text-primary"></i>
-              <div>
-                <h4>Dicta reprehenderit</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>4 hrs. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li class="dropdown-footer">
-              <a href="#">Show all notifications</a>
-            </li>
-
-          </ul><!-- End Notification Dropdown Items -->
-
-        </li><!-- End Notification Nav -->
+       
 
         <li class="nav-item dropdown">
 
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
             <i class="bi bi-chat-left-text"></i>
-            <span class="badge  badge-number">3</span>
+            <span class="badge bg-success badge-number">20</span>
           </a><!-- End Messages Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
             <li class="dropdown-header">
-              You have 3 new messages
+              You have 20 new messages
               <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
             </li>
             <li>
@@ -150,9 +77,9 @@ require "../login/protect.php";
               <a href="#">
                 <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
                 <div>
-                  <h4>Maria Hudson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>4 hrs. ago</p>
+                  <h4>Thoralf Sauerbrey</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quidem voluptates, ...</p>
+                  <p>2 hrs. ago</p>
                 </div>
               </a>
             </li>
@@ -164,8 +91,8 @@ require "../login/protect.php";
               <a href="#">
                 <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
                 <div>
-                  <h4>Anna Nelson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <h4>Thorsten Krebs</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quidem voluptates, ...</p>
                   <p>6 hrs. ago</p>
                 </div>
               </a>
@@ -178,8 +105,8 @@ require "../login/protect.php";
               <a href="#">
                 <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
                 <div>
-                  <h4>David Muldon</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <h4>System</h4>
+                  <p>Wir haben einige Updates am System gemacht! Jetzt neu: Mail Funktion direkt in der Website...</p>
                   <p>8 hrs. ago</p>
                 </div>
               </a>
@@ -199,7 +126,7 @@ require "../login/protect.php";
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <img src="assets/img/profile.svg" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2"><?php echo $_SESSION["user"]; ?></span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -568,20 +495,9 @@ require "../login/protect.php";
 </div>
 
 </div></div>
-  <div class="col ">  <div class="card info-card customers-card">
-
-<div class="filter">
-  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-    <li class="dropdown-header text-start">
-      <h6>Optionen</h6>
-    </li>
+  <div class="col ">  <div class="card info-card customers-card" data-bs-toggle="modal" data-bs-target="#ExtralargeModal">
 
 
-    <li><a class="dropdown-item" href="#">Vergrößern</a></li>
-    <li><a class="dropdown-item" href="#">Verbergen</a></li>
-  </ul>
-</div>
 
 <div class="card-body">
   <h5 class="card-title">ungelesene Mails</span></h5>
@@ -653,8 +569,30 @@ require "../login/protect.php";
       <i class="ri-time-line"></i>
     </div>
     <div class="ps-3">
-      <h6><?php echo date("g:i A") ?></h6>
-      
+      <h6 id="refreshed-content"><?php echo date("g:i A") ?></h6>
+      <script>
+  function refreshContent() {
+    // Make an AJAX request to the current page to refresh the content
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", window.location.href, true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+        // Find the updated content in the response and update the div
+        var parser = new DOMParser();
+        var response = parser.parseFromString(xhr.responseText, "text/html");
+        var updatedContent = response.getElementById("refreshed-content").innerHTML;
+        document.getElementById("refreshed-content").innerHTML = updatedContent;
+      }
+    };
+    xhr.send();
+
+    // Schedule the next refresh
+    setTimeout(refreshContent, 60000);
+  }
+
+  // Start the refresh cycle
+  refreshContent();
+</script>
 
     </div>
   </div>
@@ -662,9 +600,524 @@ require "../login/protect.php";
 </div>
 </div></div>
 </div>
-    </section>
+<!-- News & Updates Traffic -->
+<div class="card">
+            <div class="filter">
+              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <li class="dropdown-header text-start">
+                  <h6>Filter</h6>
+                </li>
 
-  </main><!-- End #main -->
+                <li><a class="dropdown-item" href="#">Today</a></li>
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">This Year</a></li>
+              </ul>
+            </div>
+
+            <div class="card-body pb-0">
+              <h5 class="card-title">News &amp; Updates <span>| Today</span></h5>
+
+              <div class="news">
+                <div class="post-item clearfix">
+                  <img src="assets/img/news-1.jpg" alt="">
+                  <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
+                  <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/news-2.jpg" alt="">
+                  <h4><a href="#">Quidem autem et impedit</a></h4>
+                  <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/news-3.jpg" alt="">
+                  <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
+                  <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/news-4.jpg" alt="">
+                  <h4><a href="#">Laborum corporis quo dara net para</a></h4>
+                  <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/news-5.jpg" alt="">
+                  <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
+                  <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
+                </div>
+
+              </div><!-- End sidebar recent posts-->
+
+            </div>
+          </div><!-- End News & Updates -->
+          <div class="container">
+  <div class="row">
+    <div class="col">
+      <!-- Default Card -->
+      <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Default Card</h5>
+              Ut in ea error laudantium quas omnis officia. Sit sed praesentium voluptas. Corrupti inventore consequatur nisi necessitatibus modi consequuntur soluta id. Enim autem est esse natus assumenda. Non sunt dignissimos officiis expedita. Consequatur sint repellendus voluptas.
+              Quidem sit est nulla ullam. Suscipit debitis ullam iusto dolorem animi dolorem numquam. Enim fuga ipsum dolor nulla quia ut.
+              Rerum dolor voluptatem et deleniti libero totam numquam nobis distinctio. Sit sint aut. Consequatur rerum in.
+            </div>
+          </div><!-- End Default Card -->
+    </div>
+    <div class="col">
+      <!-- Default Card -->
+      <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Default Card</h5>
+                <!-- Doughnut Chart -->
+                <canvas id="doughnutChart" style="max-height: 400px;"></canvas>
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new Chart(document.querySelector('#doughnutChart'), {
+                    type: 'doughnut',
+                    data: {
+                      labels: [
+                        'Red',
+                        'Blue',
+                        'Yellow'
+                      ],
+                      datasets: [{
+                        label: 'My First Dataset',
+                        data: [300, 50, 100],
+                        backgroundColor: [
+                          'rgb(255, 99, 132)',
+                          'rgb(54, 162, 235)',
+                          'rgb(255, 205, 86)'
+                        ],
+                        hoverOffset: 4
+                      }]
+                    }
+                  });
+                });
+              </script>
+              <!-- End Doughnut CHart -->
+            </div>
+          </div><!-- End Default Card -->
+    </div>
+  </div>
+          
+        
+    </section>
+    <div class="modal fade" id="ExtralargeModal" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                  
+                    <div class="modal-body">
+                    <div class="container">
+<div class="row">
+
+<div class="col-md-12">
+<div class="grid email">
+<div class="grid-body">
+<div class="row">
+  <h1>Inbox</h1>
+
+<div class="row align-items-start">
+  <div class="col  w-auto"><a class="btn btn-block btn-primary" data-toggle="modal" data-target="#compose-modal"><i class="ri-pencil-line"></i> Neue Nachricht</a>
+  <a class="btn btn-block btn-warning" data-toggle="modal" data-target="#compose-modal"><i class="ri-spam-2-line"></i> Spam</a>
+  <a class="btn btn-block btn-danger" data-toggle="modal" data-target="#compose-modal"><i class="ri-delete-bin-7-line"></i> Löschen</a>
+  <a class="btn btn-block btn-info" data-toggle="modal" data-target="#compose-modal"><i class="ri-information-line"></i> Info</a></div>
+  
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="col-md-9">
+<div class="row">
+<div class="col-sm-6">
+<label style="margin-right: 8px;" class="">
+<div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" id="check-all" class="icheck" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
+</label>
+
+</div>
+
+</div>
+<div class="padding"></div>
+<div class="table-responsive">
+<table class="table">
+<tbody><tr>
+<td class="action"><input type="checkbox" /></td>
+<td class="action"><i class="fa fa-star-o"></i></td>
+<td class="action"><i class="fa fa-bookmark-o"></i></td>
+<td class="name"><a href="#">Larry Gardner</a></td>
+<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
+<td class="time">08:30 PM</td>
+</tr>
+<tr>
+<td class="action"><input type="checkbox" /></td>
+<td class="action"><i class="fa fa-star-o"></i></td>
+<td class="action"><i class="fa fa-bookmark"></i></td>
+<td class="name"><a href="#">Larry Gardner</a></td>
+<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
+<td class="time">08:30 PM</td>
+</tr>
+<tr class="read">
+<td class="action"><div class="icheckbox_square-blue" st<td class="action"><input type="checkbox" /></td>
+<td class="action"><i class="fa fa-star"></i></td>
+<td class="action"><i class="fa fa-bookmark"></i></td>
+<td class="name"><a href="#">Larry Gardner</a></td>
+<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
+<td class="time">08:30 PM</td>
+</tr>
+<tr>
+<td class="action"><input type="checkbox" /></td>
+<td class="action"><i class="fa fa-star-o"></i></td>
+<td class="action"><i class="fa fa-bookmark-o"></i></td>
+<td class="name"><a href="#">Larry Gardner</a></td>
+<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
+<td class="time">08:30 PM</td>
+</tr>
+<tr class="read">
+<td class="action"><input type="checkbox" /></td>
+<td class="action"><i class="fa fa-star-o"></i></td>
+<td class="action"><i class="fa fa-bookmark-o"></i></td>
+<td class="name"><a href="#">Larry Gardner</a></td>
+<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
+<td class="time">08:30 PM</td>
+</tr>
+<tr class="read">
+<td class="action"><input type="checkbox" /></td>
+<td class="action"><i class="fa fa-star-o"></i></td>
+<td class="action"><i class="fa fa-bookmark"></i></td>
+<td class="name"><a href="#">Larry Gardner</a></td>
+<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
+<td class="time">08:30 PM</td>
+</tr>
+<tr>
+<td class="action"><input type="checkbox" /></td>
+<td class="action"><i class="fa fa-star"></i></td>
+<td class="action"><i class="fa fa-bookmark-o"></i></td>
+<td class="name"><a href="#">Larry Gardner</a></td>
+<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
+<td class="time">08:30 PM</td>
+</tr>
+<tr>
+<td class="action"><input type="checkbox" /></td>
+<td class="action"><i class="fa fa-star-o"></i></td>
+<td class="action"><i class="fa fa-bookmark-o"></i></td>
+<td class="name"><a href="#">Larry Gardner</a></td>
+<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
+<td class="time">08:30 PM</td>
+</tr>
+<tr class="read">
+<td class="action"><input type="checkbox" /></td>
+<td class="action"><i class="fa fa-star"></i></td>
+<td class="action"><i class="fa fa-bookmark"></i></td>
+<td class="name"><a href="#">Larry Gardner</a></td>
+<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
+<td class="time">08:30 PM</td>
+</tr>
+<tr>
+<td class="action"><input type="checkbox" /></td>
+<td class="action"><i class="fa fa-star"></i></td>
+<td class="action"><i class="fa fa-bookmark-o"></i></td>
+<td class="name"><a href="#">Larry Gardner</a></td>
+<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
+<td class="time">08:30 PM</td>
+</tr>
+</tbody></table>
+</div>
+
+</div>
+
+
+<div class="modal fade" id="compose-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-wrapper">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header bg-blue">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h4 class="modal-title"><i class="fa fa-envelope"></i> Compose New Message</h4>
+</div>
+<form action="#" method="post">
+<div class="modal-body">
+<div class="form-group">
+<input name="to" type="email" class="form-control" placeholder="To">
+</div>
+<div class="form-group">
+<input name="cc" type="email" class="form-control" placeholder="Cc">
+</div>
+<div class="form-group">
+<input name="bcc" type="email" class="form-control" placeholder="Bcc">
+</div>
+<div class="form-group">
+<input name="subject" type="email" class="form-control" placeholder="Subject">
+</div>
+<div class="form-group">
+<textarea name="message" id="email_message" class="form-control" placeholder="Message" style="height: 120px;"></textarea>
+</div>
+<div class="form-group"> <input type="file" name="attachment">
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Discard</button>
+<button type="submit" class="btn btn-primary pull-right"><i class="fa fa-envelope"></i> Send Message</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<style type="text/css">
+body{
+    margin-top:20px;
+    background:#eee;
+}
+/* EMAIL */
+.email {
+    padding: 20px 10px 15px 10px;
+	font-size: 1em;
+}
+
+.email .btn.search {
+	font-size: 0.9em;
+}
+
+.email h2 {
+	margin-top: 0;
+	padding-bottom: 8px;
+}
+
+.email .nav.nav-pills > li > a {
+	border-top: 3px solid transparent;
+}
+
+.email .nav.nav-pills > li > a > .fa {
+	margin-right: 5px;
+}
+
+.email .nav.nav-pills > li.active > a,
+.email .nav.nav-pills > li.active > a:hover {
+	background-color: #f6f6f6;
+	border-top-color: #3c8dbc;
+}
+
+.email .nav.nav-pills > li.active > a {
+	font-weight: 600;
+}
+
+.email .nav.nav-pills > li > a:hover {
+	background-color: #f6f6f6;
+}
+
+.email .nav.nav-pills.nav-stacked > li > a {
+	color: #666;
+	border-top: 0;
+	border-left: 3px solid transparent;
+	border-radius: 0px;
+}
+
+.email .nav.nav-pills.nav-stacked > li.active > a,
+.email .nav.nav-pills.nav-stacked > li.active > a:hover {
+	background-color: #f6f6f6;
+	border-left-color: #3c8dbc;
+	color: #444;
+}
+
+.email .nav.nav-pills.nav-stacked > li.header {
+	color: #777;
+	text-transform: uppercase;
+	position: relative;
+	padding: 0px 0 10px 0;
+}
+
+.email table {
+	font-weight: 600;
+}
+
+.email table a {
+	color: #666;
+}
+
+.email table tr.read > td {
+	background-color: #f6f6f6;
+}
+
+.email table tr.read > td {
+	font-weight: 400;
+}
+
+.email table tr td > i.fa {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+.email table tr td > i.fa-star {
+	color: #f39c12;
+}
+
+.email table tr td > i.fa-bookmark {
+	color: #e74c3c;
+}
+
+.email table tr > td.action {
+	padding-left: 0px;
+	padding-right: 2px;
+}
+
+.grid {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    color: #666666;
+    border-radius: 2px;
+    margin-bottom: 25px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.grid .grid-header:after {
+    clear: both;
+}
+
+.grid .grid-header span,
+.grid .grid-header > .fa {
+    display: inline-block;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.5em;
+    float: left;
+}
+
+.grid .grid-header span {
+    padding: 0 5px;
+}
+
+.grid .grid-header > .fa {
+    padding: 5px 10px 0 0;
+}
+
+.grid .grid-header > .grid-tools {
+    padding: 4px 10px;
+}
+
+.grid .grid-header > .grid-tools a {
+    color: #999999;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.grid .grid-header > .grid-tools a:hover {
+    color: #666666;
+}
+
+.grid .grid-body {
+    padding: 15px 20px 15px 20px;
+    font-size: 0.9em;
+    line-height: 1.9em;
+}
+
+.grid .full {
+    padding: 0 !important;
+}
+
+.grid .transparent {
+    box-shadow: none !important;
+    margin: 0px !important;
+    border-radius: 0px !important;
+}
+
+.grid.top.black > .grid-header {
+    border-top-color: #000000 !important;
+}
+
+.grid.bottom.black > .grid-body {
+    border-bottom-color: #000000 !important;
+}
+
+.grid.top.blue > .grid-header {
+    border-top-color: #007be9 !important;
+}
+
+.grid.bottom.blue > .grid-body {
+    border-bottom-color: #007be9 !important;
+}
+
+.grid.top.green > .grid-header {
+    border-top-color: #00c273 !important;
+}
+
+.grid.bottom.green > .grid-body {
+    border-bottom-color: #00c273 !important;
+}
+
+.grid.top.purple > .grid-header {
+    border-top-color: #a700d3 !important;
+}
+
+.grid.bottom.purple > .grid-body {
+    border-bottom-color: #a700d3 !important;
+}
+
+.grid.top.red > .grid-header {
+    border-top-color: #dc1200 !important;
+}
+
+.grid.bottom.red > .grid-body {
+    border-bottom-color: #dc1200 !important;
+}
+
+.grid.top.orange > .grid-header {
+    border-top-color: #f46100 !important;
+}
+
+.grid.bottom.orange > .grid-body {
+    border-bottom-color: #f46100 !important;
+}
+
+.grid.no-border > .grid-header {
+    border-bottom: 0px !important;
+}
+
+.grid.top > .grid-header {
+    border-top-width: 4px !important;
+    border-top-style: solid !important;
+}
+
+.grid.bottom > .grid-body {
+    border-bottom-width: 4px !important;
+    border-bottom-style: solid !important;
+}
+</style>
+<script type="text/javascript">
+
+</script>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+    
+  </main>
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
