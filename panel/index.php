@@ -500,7 +500,7 @@ require "../login/protect.php";
 
 
 <div class="card-body">
-  <h5 class="card-title">ungelesene Mails</span></h5>
+  <h5 class="card-title">Ungelesene Mails</span></h5>
 
   <div class="d-flex align-items-center">
     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -531,7 +531,7 @@ require "../login/protect.php";
 </div>
 
 <div class="card-body">
-  <h5 class="card-title">verpasste Nachrichten</span></h5>
+  <h5 class="card-title">Verpasste Nachrichten</span></h5>
 
   <div class="d-flex align-items-center">
     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -569,7 +569,15 @@ require "../login/protect.php";
       <i class="ri-time-line"></i>
     </div>
     <div class="ps-3">
-      <h6 id="refreshed-content"><?php echo date("g:i A") ?></h6>
+    
+    <h6 id="refreshed-content">
+  <?php
+  date_default_timezone_set('Europe/Berlin');
+  echo date("H:i");
+  ?>
+</h6>
+
+
       <script>
   function refreshContent() {
     // Make an AJAX request to the current page to refresh the content
@@ -600,9 +608,220 @@ require "../login/protect.php";
 </div>
 </div></div>
 </div>
-<!-- News & Updates Traffic -->
-<div class="card">
-            <div class="filter">
+<div class="container">
+  <div class="row">
+    <div class="col">
+   <!-- Default Card -->
+   <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">File Manager | <span>View All</span></h5>
+              <div class="">
+                                                    
+                                                  
+        
+                                                    <div class="table-responsive">
+                                                        <table class="table align-middle table-nowrap table-hover mb-0">
+                                                            <thead>
+                                                                <tr>
+                                                                  <th scope="col">Name</th>
+                                                                  <th scope="col">Date modified</th>
+                                                                  <th scope="col" colspan="2">Size</th>
+                                                                </tr>
+                                                              </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-file-document font-size-16 align-middle text-primary me-2"></i> index.html</a></td>
+                                                                    <td>12-10-2020, 09:45</td>
+                                                                    <td>09 KB</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                                <i class="mdi mdi-dots-horizontal"></i>
+                                                                            </a>
+                                                                            
+                                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                                <a class="dropdown-item" href="#">Open</a>
+                                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                                <a class="dropdown-item" href="#">Rename</a>
+                                                                                <div class="dropdown-divider"></div>
+                                                                                <a class="dropdown-item" href="#">Remove</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-folder-zip font-size-16 align-middle text-warning me-2"></i> Project-A.zip</a></td>
+                                                                    <td>11-10-2020, 17:05</td>
+                                                                    <td>115 KB</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                                <i class="mdi mdi-dots-horizontal"></i>
+                                                                            </a>
+                                                                            
+                                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                                <a class="dropdown-item" href="#">Open</a>
+                                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                                <a class="dropdown-item" href="#">Rename</a>
+                                                                                <div class="dropdown-divider"></div>
+                                                                                <a class="dropdown-item" href="#">Remove</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-image font-size-16 align-middle text-muted me-2"></i> Img-1.jpeg</a></td>
+                                                                    <td>11-10-2020, 13:26</td>
+                                                                    <td>86 KB</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                                <i class="mdi mdi-dots-horizontal"></i>
+                                                                            </a>
+                                                                            
+                                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                                <a class="dropdown-item" href="#">Open</a>
+                                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                                <a class="dropdown-item" href="#">Rename</a>
+                                                                                <div class="dropdown-divider"></div>
+                                                                                <a class="dropdown-item" href="#">Remove</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-text-box font-size-16 align-middle text-muted me-2"></i> update list.txt</a></td>
+                                                                    <td>10-10-2020, 11:32</td>
+                                                                    <td>08 KB</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                                <i class="mdi mdi-dots-horizontal"></i>
+                                                                            </a>
+                                                                            
+                                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                                <a class="dropdown-item" href="#">Open</a>
+                                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                                <a class="dropdown-item" href="#">Rename</a>
+                                                                                <div class="dropdown-divider"></div>
+                                                                                <a class="dropdown-item" href="#">Remove</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-folder font-size-16 align-middle text-warning me-2"></i> Project B</a></td>
+                                                                    <td>10-10-2020, 10:51</td>
+                                                                    <td>72 KB</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                                <i class="mdi mdi-dots-horizontal"></i>
+                                                                            </a>
+                                                                            
+                                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                                <a class="dropdown-item" href="#">Open</a>
+                                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                                <a class="dropdown-item" href="#">Rename</a>
+                                                                                <div class="dropdown-divider"></div>
+                                                                                <a class="dropdown-item" href="#">Remove</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-text-box font-size-16 align-middle text-muted me-2"></i> Changes list.txt</a></td>
+                                                                    <td>09-10-2020, 17:05</td>
+                                                                    <td>07 KB</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                                <i class="mdi mdi-dots-horizontal"></i>
+                                                                            </a>
+                                                                            
+                                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                                <a class="dropdown-item" href="#">Open</a>
+                                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                                <a class="dropdown-item" href="#">Rename</a>
+                                                                                <div class="dropdown-divider"></div>
+                                                                                <a class="dropdown-item" href="#">Remove</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-image font-size-16 align-middle text-success me-2"></i> Img-2.png</a></td>
+                                                                    <td>09-10-2020, 15:12</td>
+                                                                    <td>31 KB</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                                <i class="mdi mdi-dots-horizontal"></i>
+                                                                            </a>
+                                                                            
+                                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                                <a class="dropdown-item" href="#">Open</a>
+                                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                                <a class="dropdown-item" href="#">Rename</a>
+                                                                                <div class="dropdown-divider"></div>
+                                                                                <a class="dropdown-item" href="#">Remove</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-folder font-size-16 align-middle text-warning me-2"></i> Project C</a></td>
+                                                                    <td>09-10-2020, 10:11</td>
+                                                                    <td>20 KB</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                                <i class="mdi mdi-dots-horizontal"></i>
+                                                                            </a>
+                                                                            
+                                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                                <a class="dropdown-item" href="#">Open</a>
+                                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                                <a class="dropdown-item" href="#">Rename</a>
+                                                                                <div class="dropdown-divider"></div>
+                                                                                <a class="dropdown-item" href="#">Remove</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="bx bxs-file font-size-16 align-middle text-primary me-2"></i> starter-page.html</a></td>
+                                                                    <td>08-10-2020, 03:22</td>
+                                                                    <td>11 KB</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                                <i class="mdi mdi-dots-horizontal"></i>
+                                                                            </a>
+                                                                            
+                                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                                <a class="dropdown-item" href="#">Open</a>
+                                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                                <a class="dropdown-item" href="#">Rename</a>
+                                                                                <div class="dropdown-divider"></div>
+                                                                                <a class="dropdown-item" href="#">Remove</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+            </div>
+          </div><!-- End Default Card -->
+    </div>
+    <div class="col">
+    <!-- Default Card -->
+    <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">News &amp; Updates</h5>
+              <div class="filter">
               <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                 <li class="dropdown-header text-start">
@@ -616,7 +835,7 @@ require "../login/protect.php";
             </div>
 
             <div class="card-body pb-0">
-              <h5 class="card-title">News &amp; Updates <span>| Today</span></h5>
+            
 
               <div class="news">
                 <div class="post-item clearfix">
@@ -643,7 +862,7 @@ require "../login/protect.php";
                   <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
                 </div>
 
-                <div class="post-item clearfix">
+                <div class="post-item clearfix pb-3">
                   <img src="assets/img/news-5.jpg" alt="">
                   <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
                   <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
@@ -652,52 +871,176 @@ require "../login/protect.php";
               </div><!-- End sidebar recent posts-->
 
             </div>
-          </div><!-- End News & Updates -->
-          <div class="container">
-  <div class="row">
-    <div class="col">
-      <!-- Default Card -->
-      <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Default Card</h5>
-              Ut in ea error laudantium quas omnis officia. Sit sed praesentium voluptas. Corrupti inventore consequatur nisi necessitatibus modi consequuntur soluta id. Enim autem est esse natus assumenda. Non sunt dignissimos officiis expedita. Consequatur sint repellendus voluptas.
-              Quidem sit est nulla ullam. Suscipit debitis ullam iusto dolorem animi dolorem numquam. Enim fuga ipsum dolor nulla quia ut.
-              Rerum dolor voluptatem et deleniti libero totam numquam nobis distinctio. Sit sint aut. Consequatur rerum in.
             </div>
           </div><!-- End Default Card -->
     </div>
-    <div class="col">
+  </div>
+
+          <div class="container">
+          <div class="row">
+     <div class="col ">
       <!-- Default Card -->
       <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Default Card</h5>
-                <!-- Doughnut Chart -->
-                <canvas id="doughnutChart" style="max-height: 400px;"></canvas>
+              <h5 class="card-title">To-Dos</h5>
+             
+              <div id="container">
+              <div class="container">
+              <div class="row">
+              <div class="col"><button id="addTaskBtn" class="btn btn-primary">Add Task</button>
+              <div class="pb-md-0 pb-3"></div> 
+              <button id="deleteCompletedBtn" class="btn btn-danger ">Delete Completed</button>
+              <div class="pb-md-0 pb-3"></div> 
+              <button id="selectAllBtn" class="btn btn-info ">Select All</button>
+              
+</div>
+
+              <div class="pb-md-0 pb-3"></div>
+              
+              
+             
+              <div class="col">
+              <input type="text" class="form-control "   id="taskInput">
+              <div class="w-100"></div>
+              <div class="pb-3"></div>
+              </div>
+             
+              <ul id="taskList" class="pb-3"></ul>
+              
+  </div>
+</div>
+  
+  
+
+  
+  
+  
+
+</div>
+<script>
+const addTaskBtn = document.getElementById("addTaskBtn");
+const taskInput = document.getElementById("taskInput");
+const taskList = document.getElementById("taskList");
+const deleteCompletedBtn = document.getElementById("deleteCompletedBtn");
+
+const loadTasks = function () {
+  const taskData = JSON.parse(localStorage.getItem("tasks")) || [];
+  taskData.forEach(function (task) {
+    const taskItem = document.createElement("li");
+    taskItem.innerHTML = `
+      <input type="checkbox" ${task.completed ? "checked" : ""} class="form-check-input">
+      <label class="form-check-label">${task.text}</label>
+    `;
+    taskItem.classList.add("form-check");
+    taskList.appendChild(taskItem);
+  });
+};
+
+const saveTasks = function () {
+  const taskData = [];
+  taskList.querySelectorAll("li").forEach(function (taskItem) {
+    const checkbox = taskItem.querySelector("input[type=checkbox]");
+    taskData.push({
+      text: taskItem.textContent.trim(),
+      completed: checkbox.checked,
+    });
+  });
+
+  localStorage.setItem("tasks", JSON.stringify(taskData));
+};
+
+addTaskBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  const taskValue = taskInput.value;
+  if (!taskValue) return;
+
+  const taskItem = document.createElement("li");
+  taskItem.innerHTML = `
+    <input type="checkbox" class="form-check-input">
+    <label class="form-check-label">${taskValue}</label>
+  `;
+  taskItem.classList.add("form-check");
+  taskList.appendChild(taskItem);
+  taskInput.value = "";
+  saveTasks();
+  
+  if (taskList.childElementCount > 10) {
+    taskList.style.overflowY = "scroll";
+  
+  }
+});
+
+deleteCompletedBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  const completedTasks = taskList.querySelectorAll("input[type=checkbox]:checked");
+  completedTasks.forEach(function (task) {
+    task.parentElement.remove();
+  });
+  saveTasks();
+});
+
+taskList.addEventListener("change", function (event) {
+  if (event.target.matches("input[type=checkbox]")) {
+    saveTasks();
+  }
+});
+taskInput.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    addTaskBtn.click();
+  }
+});
+if (taskList.childElementCount > 10) {
+  taskList.style.overflowY = "scroll";
+}
+const selectAllBtn = document.getElementById("selectAllBtn");
+
+selectAllBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  const checkboxes = taskList.querySelectorAll("input[type=checkbox]");
+  checkboxes.forEach(function (checkbox) {
+    checkbox.checked = true;
+  });
+  saveTasks();
+});
+
+loadTasks();
+</script>
+            </div>
+          </div><!-- End Default Card -->
+    </div>
+    <div class="col d-none d-sm-block">
+      <!-- Default Card -->
+      <div class="card ">
+            <div class="card-body">
+              <h5 class="card-title">Errechneter Zeitersparnis</h5>
+                <!-- Line Chart -->
+              <canvas id="lineChart" style="max-height: 400px;"></canvas>
               <script>
                 document.addEventListener("DOMContentLoaded", () => {
-                  new Chart(document.querySelector('#doughnutChart'), {
-                    type: 'doughnut',
+                  new Chart(document.querySelector('#lineChart'), {
+                    type: 'line',
                     data: {
-                      labels: [
-                        'Red',
-                        'Blue',
-                        'Yellow'
-                      ],
+                      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
                       datasets: [{
-                        label: 'My First Dataset',
-                        data: [300, 50, 100],
-                        backgroundColor: [
-                          'rgb(255, 99, 132)',
-                          'rgb(54, 162, 235)',
-                          'rgb(255, 205, 86)'
-                        ],
-                        hoverOffset: 4
+                        label: 'Ersparte Minuten',
+                        data: [65, 59, 80, 81, 56, 55, 40],
+                        fill: false,
+                        borderColor: 'rgb(75, 192, 192)',
+                        tension: 0.1
                       }]
+                    },
+                    options: {
+                      scales: {
+                        y: {
+                          beginAtZero: true
+                        }
+                      }
                     }
                   });
                 });
               </script>
-              <!-- End Doughnut CHart -->
+              <!-- End Line CHart -->
             </div>
           </div><!-- End Default Card -->
     </div>
@@ -1124,9 +1467,7 @@ body{
     <div class="copyright">
       &copy; Copyright <strong><span>MyDashBoard</span></strong>. All Rights Reserved
     </div>
-    <div class="credits">
-     
-  </footer><!-- End Footer -->
+  </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
