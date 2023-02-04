@@ -17,22 +17,22 @@ require "../login/protect.php";
   <meta content="" name="keywords">
 
 
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="..\assets/img/favicon.png" rel="icon">
+  <link href="..\assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   
 
   
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="..\assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="..\assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="..\assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="..\assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="..\assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="..\assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="..\assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
   
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="..\assets/css/panel.css" rel="stylesheet">
 
 </head>
 
@@ -43,7 +43,7 @@ require "../login/protect.php";
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.php" class="logo text-dark d-flex align-items-center">
-        <img src="assets/img/logo.svg" alt="">
+        <img scr="..\assets/img/logo.svg" alt="">
         <span class="d-none d-lg-block">MyDashBoard</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -75,7 +75,7 @@ require "../login/protect.php";
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                
                 <div>
                   <h4>Thoralf Sauerbrey</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quidem voluptates, ...</p>
@@ -89,7 +89,7 @@ require "../login/protect.php";
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                
                 <div>
                   <h4>Thorsten Krebs</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quidem voluptates, ...</p>
@@ -103,7 +103,7 @@ require "../login/protect.php";
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                
                 <div>
                   <h4>System</h4>
                   <p>Wir haben einige Updates am System gemacht! Jetzt neu: Mail Funktion direkt in der Website...</p>
@@ -126,7 +126,7 @@ require "../login/protect.php";
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile.svg" alt="Profile" class="rounded-circle">
+            <img src="..\assets/img/profile.svg" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2"><?php echo $_SESSION["user"]; ?></span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -196,7 +196,7 @@ require "../login/protect.php";
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.php">
+        <a class="nav-link " href="./">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -839,31 +839,31 @@ require "../login/protect.php";
 
               <div class="news">
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-1.jpg" alt="">
+                  <img scr="..\assets/img/news-1.jpg" alt="">
                   <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
                   <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-2.jpg" alt="">
+                  <img scr="..\assets/img/news-2.jpg" alt="">
                   <h4><a href="#">Quidem autem et impedit</a></h4>
                   <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-3.jpg" alt="">
+                  <img scr="..\assets/img/news-3.jpg" alt="">
                   <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
                   <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-4.jpg" alt="">
+                  <img scr="..\assets/img/news-4.jpg" alt="">
                   <h4><a href="#">Laborum corporis quo dara net para</a></h4>
                   <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
                 </div>
 
                 <div class="post-item clearfix pb-3">
-                  <img src="assets/img/news-5.jpg" alt="">
+                  <img scr="..\assets/img/news-5.jpg" alt="">
                   <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
                   <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
                 </div>
@@ -1472,17 +1472,18 @@ body{
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.umd.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.min.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="..\assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="..\assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="..\assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="..\assets/vendor/echarts/echarts.min.js"></script>
+  <script src="..\assets/vendor/quill/quill.min.js"></script>
+  <script src="..\assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="..\assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="..\assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="..\assets\js\panel.js"></script>
+  
 
 </body>
 
