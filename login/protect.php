@@ -7,7 +7,7 @@ if (isset($_POST["logout"])) {
   session_start();
 session_destroy();
 setcookie("PHPSESSID", "", time() - 3600, "/");
-header("Location: ../index.php?logout=1");
+header("Location: ../");
 exit();
   
 

@@ -556,6 +556,7 @@ a:hover {
   background-color: #fff;
 }
 
+
 @media (max-width: 1199px) {
   .sidebar {
     left: -300px;
@@ -612,6 +613,7 @@ a:hover {
 
 .sidebar-nav .nav-item {
   margin-bottom: 5px;
+  font-size: large;
 }
 
 .sidebar-nav .nav-heading {
@@ -625,13 +627,18 @@ a:hover {
 .sidebar-nav .nav-link {
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   color: #046380;
   transition: 0.3;
   background: #f6f9ff;
   padding: 10px 15px;
   border-radius: 4px;
+}
+@media (max-width: 767px) {
+  .sidebar-nav .nav-link {
+    font-size: 15px;
+  }
 }
 
 .sidebar-nav .nav-link i {
