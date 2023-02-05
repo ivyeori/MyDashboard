@@ -279,7 +279,7 @@
                                                                 <div class="d-flex align-items-center">
                                                                     <div class="avatar align-self-center me-3">
                                                                         <div class="avatar-title rounded bg-soft-primary text-primary font-size-24">
-                                                                            <i class="ri-drive-line"></i>
+                                                                            <i class="ri-drive-line h1"></i>
                                                                         </div>
                                                                     </div>
 
@@ -321,7 +321,7 @@
                                                                 <div class="d-flex align-items-center">
                                                                     <div class="avatar align-self-center me-3">
                                                                         <div class="avatar-title rounded bg-soft-info text-info font-size-24">
-                                                                            <i class="ri-dropbox-line"></i>
+                                                                            <i class="ri-dropbox-line h1"></i>
                                                                         </div>
                                                                     </div>
 
@@ -364,7 +364,7 @@
                                                                 <div class="d-flex align-items-center">
                                                                     <div class="avatar align-self-center me-3">
                                                                         <div class="avatar-title rounded bg-soft-primary text-primary font-size-24">
-                                                                            <i class="ri-apple-line"></i>
+                                                                            <i class="ri-apple-line h1"></i>
                                                                         </div>
                                                                     </div>
 
