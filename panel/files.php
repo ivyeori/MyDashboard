@@ -216,314 +216,623 @@
 
   <main id="main" class="main">
 
- 
+  <ol class="breadcrumb">
+                 
+				 <p class="breadcrumb-item">
+				
+			   </ol>
             
   <section class="section dashboard">
-  <div class="container">
-<div class="row">
-    <div class="col-12 col-lg-3">
-		<div class="card">
-			<div class="card-body">
-            <div class="page-aside-left pt-3">
+  <div class="container-fluid">
 
-                                            <div class="btn-group d-block mb-2">
-                                                <button type="button" class="btn btn-success dropdown-toggle w-100" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-plus"></i> Create New </button>
-                                                <div class="dropdown-menu" style="">
-                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-folder-plus-outline me-1"></i> Folder</a>
-                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-file-plus-outline me-1"></i> File</a>
-                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-file-document me-1"></i> Document</a>
-                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-upload me-1"></i> Choose File</a>
+                        <div class="row">
+                            <div class="col-xl-9">
+                                <div class="card">
+                                    <div class="card-body">
+										
+                                        <div class="row mb-3 pt-4">
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="search-box mb-2 me-2">
+                                                    <div class="position-relative">
+                                                        <input type="text" class="form-control bg-light border-light rounded" placeholder="Search...">
+                                                        
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="email-menu-list mt-3">
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-folder-outline font-18 align-middle me-2"></i>My Files</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-google-drive font-18 align-middle me-2"></i>Google Drive</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-dropbox font-18 align-middle me-2"></i>Dropbox</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-share-variant font-18 align-middle me-2"></i>Share with me</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-clock-outline font-18 align-middle me-2"></i>Recent</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-star-outline font-18 align-middle me-2"></i>Starred</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-delete font-18 align-middle me-2"></i>Deleted Files</a>
-                                            </div>
-    
-                                            <div class="mt-5">
-                                                <h4><span class="badge rounded-pill p-1 px-2 badge-secondary-lighten">FREE</span></h4>
-                                                <h6 class="text-uppercase mt-3">Storage</h6>
-                                                <div class="progress my-2 progress-sm">
-                                                    <div class="progress-bar progress-lg bg-success" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <p class="text-muted font-12 mb-0">7.02 GB (46%) of 15 GB used</p>
-                                            </div>
+                                            <div class="col-lg-8 col-sm-6">
+                                                <div class="mt-4 mt-sm-0 d-flex align-items-center justify-content-sm-end">
 
+                                                    <div class="mb-2 me-2">
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <i class="ri-add-line me-1"></i> Create New
+                                                            </button>
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <a class="dropdown-item" href="#"><i class="ri-folder-2-fill me-1"></i> Folder</a>
+                                                                <a class="dropdown-item" href="#"><i class="ri-file-line me-1"></i> File</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    
+                                                    
+                                                </div>
+                                            </div>
                                         </div>
-			</div>
-		</div>
-		<div class="card">
-			
-		</div>
-	</div>
-	<div class="col-12 col-lg-9">
-		<div class="card">
-			<div class="card-body">
-				<div class="fm-search">
-					<div class="mb-0 pt-3">
-						<div class="input-group input-group-lg">	<span class="input-group-text bg-transparent"><i class="fa fa-search"></i></span>
-							<input type="text" class="form-control " placeholder="Search the files">
-						</div>
-					</div>
-				</div>
-				<div class="row mt-3">
-					<div class="col-12 col-lg-4">
-						<div class="card shadow-none border radius-15">
-							<div class="card-body">
-								<div class="d-flex align-items-center">
-									<div class="fm-icon-box radius-15 bg-primary text-white"><i class="lni lni-google-drive"></i>
-									</div>
-									<div class="ms-auto font-24"><i class="fa fa-ellipsis-h"></i>
-									</div>
-								</div>
-								<h5 class="mt-3 mb-0">Google Drive</h5>
-								<p class="mb-1 mt-4"><span>45.5 GB</span>  <span class="float-end">50 GB</span>
-								</p>
-								<div class="progress" style="height: 7px;">
-									<div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-4">
-						<div class="card shadow-none border radius-15">
-							<div class="card-body">
-								<div class="d-flex align-items-center">
-									<div class="fm-icon-box radius-15 bg-danger text-white"><i class="lni lni-dropbox-original"></i>
-									</div>
-									<div class="ms-auto font-24"><i class="fa fa-ellipsis-h"></i>
-									</div>
-								</div>
-								<h5 class="mt-3 mb-0">Dropbox</h5>
-								<p class="mb-1 mt-4"><span>1,2 GB</span>  <span class="float-end">3 GB</span>
-								</p>
-								<div class="progress" style="height: 7px;">
-									<div class="progress-bar bg-danger" role="progressbar" style="width: 45%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-4">
-						<div class="card shadow-none border radius-15">
-							<div class="card-body">
-								<div class="d-flex align-items-center">
-									<div class="fm-icon-box radius-15 bg-warning text-dark"><i class="bx bxs-door-open"></i>
-									</div>
-									<div class="ms-auto font-24"><i class="fa fa-ellipsis-h"></i>
-									</div>
-								</div>
-								<h5 class="mt-3 mb-0">OneDrive</h5>
-								<p class="mb-1 mt-4"><span>2,5 GB</span>  <span class="float-end">3 GB</span>
-								</p>
-								<div class="progress" style="height: 7px;">
-									<div class="progress-bar bg-warning" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--end row-->
-				<h5>Folders</h5>
-				<div class="row mt-3">
-					<div class="col-12 col-lg-4">
-						<div class="card shadow-none border radius-15">
-							<div class="card-body">
-								<div class="d-flex align-items-center">
-									<div class="font-30 text-primary"><i class="bx bxs-folder"></i>
-									</div>
-									<div class="user-groups ms-auto">
-										<img src="https://bootdey.com/img/Content/avatar/avatar1.png" width="35" height="35" class="rounded-circle" alt="">
-										<img src="https://bootdey.com/img/Content/avatar/avatar2.png" width="35" height="35" class="rounded-circle" alt="">
-									</div>
-									<div class="user-plus">+</div>
-								</div>
-								<h6 class="mb-0 text-primary">Analytics</h6>
-								<small>15 files</small>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-4">
-						<div class="card shadow-none border radius-15">
-							<div class="card-body">
-								<div class="d-flex align-items-center">
-									<div class="font-30 text-primary"><i class="bx bxs-folder"></i>
-									</div>
-									<div class="user-groups ms-auto">
-										<img src="https://bootdey.com/img/Content/avatar/avatar7.png" width="35" height="35" class="rounded-circle" alt="">
-									</div>
-								</div>
-								<h6 class="mb-0 text-primary">Assets</h6>
-								<small>345 files</small>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-4">
-						<div class="card shadow-none border radius-15">
-							<div class="card-body">
-								<div class="d-flex align-items-center">
-									<div class="font-30 text-primary"><i class="bx bxs-folder"></i>
-									</div>
-									<div class="user-groups ms-auto">
-										<img src="https://bootdey.com/img/Content/avatar/avatar2.png" width="35" height="35" class="rounded-circle" alt="">
-										<img src="https://bootdey.com/img/Content/avatar/avatar3.png" width="35" height="35" class="rounded-circle" alt="">
-									</div>
-								</div>
-								<h6 class="mb-0 text-primary">Marketing</h6>
-								<small>143 files</small>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--end row-->
-				<div class="d-flex align-items-center">
-					<div>
-						<h5 class="mb-0">Recent Files</h5>
-					</div>
-					<div class="ms-auto"><a href="javascript:;" class="btn btn-sm btn-outline-secondary">View all</a>
-					</div>
-				</div>
-				<div class="table-responsive mt-3">
-					<table class="table table-striped table-hover table-sm mb-0">
-						<thead>
-							<tr>
-								<th>Name <i class="bx bx-up-arrow-alt ms-2"></i>
-								</th>
-								<th>Members</th>
-								<th>Last Modified</th>
-								<th></th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<div class="d-flex align-items-center">
-										<div><i class="bx bxs-file-pdf me-2 font-24 text-danger"></i>
-										</div>
-										<div class="font-weight-bold text-danger">Competitor Analysis Template</div>
-									</div>
-								</td>
-								<td>Only you</td>
-								<td>Sep 3, 2019</td>
-								<td><i class="fa fa-ellipsis-h font-24"></i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="d-flex align-items-center">
-										<div><i class="bx bxs-file me-2 font-24 text-primary"></i>
-										</div>
-										<div class="font-weight-bold text-primary">How to Create a Case Study</div>
-									</div>
-								</td>
-								<td>3 members</td>
-								<td>Jun 12, 2019</td>
-								<td><i class="fa fa-ellipsis-h font-24"></i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="d-flex align-items-center">
-										<div><i class="bx bxs-file me-2 font-24 text-primary"></i>
-										</div>
-										<div class="font-weight-bold text-primary">Landing Page Structure</div>
-									</div>
-								</td>
-								<td>10 members</td>
-								<td>Jul 17, 2019</td>
-								<td><i class="fa fa-ellipsis-h font-24"></i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="d-flex align-items-center">
-										<div><i class="bx bxs-file-pdf me-2 font-24 text-danger"></i>
-										</div>
-										<div class="font-weight-bold text-danger">Meeting Report</div>
-									</div>
-								</td>
-								<td>5 members</td>
-								<td>Aug 28, 2019</td>
-								<td><i class="fa fa-ellipsis-h font-24"></i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="d-flex align-items-center">
-										<div><i class="bx bxs-file me-2 font-24 text-primary"></i>
-										</div>
-										<div class="font-weight-bold text-primary">Project Documents</div>
-									</div>
-								</td>
-								<td>Only you</td>
-								<td>Aug 17, 2019</td>
-								<td><i class="fa fa-ellipsis-h font-24"></i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="d-flex align-items-center">
-										<div><i class="bx bxs-file-doc me-2 font-24 text-success"></i>
-										</div>
-										<div class="font-weight-bold text-success">Review Checklist Template</div>
-									</div>
-								</td>
-								<td>7 members</td>
-								<td>Sep 8, 2019</td>
-								<td><i class="fa fa-ellipsis-h font-24"></i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="d-flex align-items-center">
-										<div><i class="bx bxs-file me-2 font-24 text-primary"></i>
-										</div>
-										<div class="font-weight-bold text-primary">How to Create a Case Study</div>
-									</div>
-								</td>
-								<td>3 members</td>
-								<td>Jun 12, 2019</td>
-								<td><i class="fa fa-ellipsis-h font-24"></i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="d-flex align-items-center">
-										<div><i class="bx bxs-file me-2 font-24 text-primary"></i>
-										</div>
-										<div class="font-weight-bold text-primary">Landing Page Structure</div>
-									</div>
-								</td>
-								<td>10 members</td>
-								<td>Jul 17, 2019</td>
-								<td><i class="fa fa-ellipsis-h font-24"></i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="d-flex align-items-center">
-										<div><i class="bx bxs-file-doc me-2 font-24 text-success"></i>
-										</div>
-										<div class="font-weight-bold text-success">Review Checklist Template</div>
-									</div>
-								</td>
-								<td>7 members</td>
-								<td>Sep 8, 2019</td>
-								<td><i class="fa fa-ellipsis-h font-24"></i>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</div></div></div></section>
+
+                                        <h5 class="font-size-16 me-3 mb-0">My Files</h5>
+                                            <div class="row mt-4">
+                                                <div class="col-xl-4 col-sm-6">
+                                                    <div class="card shadow-none border">
+                                                        <div class="card-body p-3">
+                                                            <div class="">
+                                                                <div class="dropdown float-end">
+                                                                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                        <i class="bx bx-dots-vertical-rounded font-size-20"></i>
+                                                                    </a>
+                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                                        <a class="dropdown-item" href="#">Action</a>
+                                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="avatar align-self-center me-3">
+                                                                        <div class="avatar-title rounded bg-soft-primary text-primary font-size-24">
+                                                                            <i class="ri-drive-line"></i>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="flex-1">
+                                                                        <h5 class="font-size-15 mb-1">Google Drive</h5>
+                                                                        <a href="" class="font-size-13 text-muted"><u>View Folder</u></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-3 pt-1">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <p class="text-muted font-size-13 mb-1">20GB</p>
+                                                                        <p class="text-muted font-size-13 mb-1">50GB used</p>
+                                                                    </div>
+                                                                    <div class="progress animated-progess custom-progress">
+                                                                        <div class="progress-bar bg-gradient bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col -->
+
+                                                <div class="col-xl-4 col-sm-6">
+                                                    <div class="card shadow-none border">
+                                                        <div class="card-body p-3">
+                                                            <div class="">
+                                                                <div class="dropdown float-end">
+                                                                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                        <i class="bx bx-dots-vertical-rounded font-size-20"></i>
+                                                                    </a>
+                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                                        <a class="dropdown-item" href="#">Action</a>
+                                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="avatar align-self-center me-3">
+                                                                        <div class="avatar-title rounded bg-soft-info text-info font-size-24">
+                                                                            <i class="ri-dropbox-line"></i>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="flex-1">
+                                                                        <h5 class="font-size-15 mb-1">Dropbox</h5>
+                                                                        <a href="" class="font-size-13 text-muted"><u>View Folder</u></a>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                <div class="mt-3 pt-1">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <p class="text-muted font-size-13 mb-1">20GB</p>
+                                                                        <p class="text-muted font-size-13 mb-1">50GB used</p>
+                                                                    </div>
+                                                                    <div class="progress animated-progess custom-progress">
+                                                                        <div class="progress-bar bg-gradient bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col -->
+
+                                                <div class="col-xl-4 col-sm-6">
+                                                    <div class="card shadow-none border">
+                                                        <div class="card-body p-3">
+                                                            <div class="">
+                                                                <div class="dropdown float-end">
+                                                                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                        <i class="bx bx-dots-vertical-rounded font-size-20"></i>
+                                                                    </a>
+                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                                        <a class="dropdown-item" href="#">Action</a>
+                                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="avatar align-self-center me-3">
+                                                                        <div class="avatar-title rounded bg-soft-primary text-primary font-size-24">
+                                                                            <i class="ri-apple-line"></i>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="flex-1">
+                                                                        <h5 class="font-size-15 mb-1">One Drive</h5>
+                                                                        <a href="" class="font-size-13 text-muted"><u>View Folder</u></a>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                <div class="mt-3 pt-1">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <p class="text-muted font-size-13 mb-1">20GB</p>
+                                                                        <p class="text-muted font-size-13 mb-1">50GB used</p>
+                                                                    </div>
+                                                                    <div class="progress animated-progess custom-progress">
+                                                                        <div class="progress-bar bg-gradient bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col -->
+
+                                            </div>
+                                            <!-- end row -->
+
+                                        <h5 class="font-size-16 me-3 mb-0">Folders</h5>
+                                            <div class="row mt-4">
+                                                <div class="col-xl-4 col-sm-6">
+                                                    <div class="card shadow-none border">
+                                                        <div class="card-body p-3">
+                                                            <div class="">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div>
+                                                                        <i class="ri-folder-2-fill h1 mb-0 text-warning"></i>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                <div class="d-flex mt-3">
+                                                                    <div class="overflow-hidden me-auto">
+                                                                        <h5 class="font-size-15 text-truncate mb-1"><a href="javascript: void(0);" class="text-body">Analytics</a></h5>
+                                                                        <p class="text-muted text-truncate mb-0">12 Files</p>
+                                                                    </div>
+                                                                    <div class="align-self-end ms-2">
+                                                                        <p class="text-muted mb-0 font-size-13"><i class="ri-time-line"></i> 15 min ago</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col -->
+
+                                                <div class="col-xl-4 col-sm-6">
+                                                    <div class="card shadow-none border">
+                                                        <div class="card-body p-3">
+                                                            <div class="">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div>
+                                                                        <i class="ri-folder-2-fill h1 mb-0 text-warning"></i>
+                                                                    </div>
+                                                                    <div class="avatar-group">
+                                                                        <div class="avatar-group-item">
+                                                                            <a href="javascript: void(0);" class="d-inline-block">
+                                                                                <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-sm">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="avatar-group-item">
+                                                                            <a href="javascript: void(0);" class="d-inline-block">
+                                                                                <img src="assets/images/users/avatar-6.jpg" alt="" class="rounded-circle avatar-sm">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex mt-3">
+                                                                    <div class="overflow-hidden me-auto">
+                                                                        <h5 class="font-size-15 text-truncate mb-1"><a href="javascript: void(0);" class="text-body">Sketch Design</a></h5>
+                                                                        <p class="text-muted text-truncate mb-0">235 Files</p>
+                                                                    </div>
+                                                                    <div class="align-self-end ms-2">
+                                                                        <p class="text-muted mb-0 font-size-13"><i class="ri-time-line"></i> 23 min ago</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col -->
+
+                                                <div class="col-xl-4 col-sm-6">
+                                                    <div class="card shadow-none border">
+                                                        <div class="card-body p-3">
+                                                            <div class="">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div>
+                                                                        <i class="ri-folder-2-fill h1 mb-0 text-warning"></i>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                <div class="d-flex mt-3">
+                                                                    <div class="overflow-hidden me-auto">
+                                                                        <h5 class="font-size-15 text-truncate mb-1"><a href="javascript: void(0);" class="text-body">Applications</a></h5>
+                                                                        <p class="text-muted text-truncate mb-0">20 Files</p>
+                                                                    </div>
+                                                                    <div class="align-self-end ms-2">
+                                                                        <p class="text-muted mb-0 font-size-13"><i class="ri-time-line"></i> 45 min ago</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col -->
+
+                                            </div>
+                                            <!-- end row -->
+                                            <div class="d-flex flex-wrap">
+                                                <h5 class="font-size-16 me-3">Recent Files</h5>
+                                                <div class="ms-auto">
+                                                    <a href="javascript: void(0);" class="fw-medium text-reset">View All</a>
+                                                </div>
+                                            </div>
+                                            <hr class="mt-2">
+                                            <div class="table-responsive">
+                                                <table class="table align-middle table-nowrap table-hover mb-0">
+                                                    <thead class="table">
+                                                        <tr>
+                                                          <th scope="col">Name</th>
+                                                          <th scope="col">Date modified</th>
+                                                          <th scope="col">Size</th>
+                                                         
+                                                        </tr>
+                                                      </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="ri-file-text-line font-size-16 align-middle text-primary me-2"></i> index.html</a></td>
+                                                            <td>12-10-2020, 09:45</td>
+                                                            <td>09 KB</td>
+                                                            
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                        <i class="ri-menu-5-line"></i>
+                                                                    </a>
+                                                                    
+                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                        <a class="dropdown-item" href="#">Open</a>
+                                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                                        <a class="dropdown-item" href="#">Rename</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="ri-folder-zip-line font-size-16 align-middle text-warning me-2"></i> Project-A.zip</a></td>
+                                                            <td>11-10-2020, 17:05</td>
+                                                            <td>115 KB</td>
+                                                            
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                        <i class="ri-menu-5-line"></i>
+                                                                    </a>
+                                                                    
+                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                        <a class="dropdown-item" href="#">Open</a>
+                                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                                        <a class="dropdown-item" href="#">Rename</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="ri-image-2-line font-size-16 align-middle text-muted me-2"></i> Img-1.jpeg</a></td>
+                                                            <td>11-10-2020, 13:26</td>
+                                                            <td>86 KB</td>
+                                                            
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                        <i class="ri-menu-5-line"></i>
+                                                                    </a>
+                                                                    
+                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                        <a class="dropdown-item" href="#">Open</a>
+                                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                                        <a class="dropdown-item" href="#">Rename</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="ri-file-text-line font-size-16 align-middle text-muted me-2"></i> update list.txt</a></td>
+                                                            <td>10-10-2020, 11:32</td>
+                                                            <td>08 KB</td>
+                                                            
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                        <i class="ri-menu-5-line"></i>
+                                                                    </a>
+                                                                    
+                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                        <a class="dropdown-item" href="#">Open</a>
+                                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                                        <a class="dropdown-item" href="#">Rename</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="ri-folder-2-fill font-size-16 align-middle text-warning me-2"></i> Project B</a></td>
+                                                            <td>10-10-2020, 10:51</td>
+                                                            <td>72 KB</td>
+                                                            
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                        <i class="ri-menu-5-line"></i>
+                                                                    </a>
+                                                                    
+                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                        <a class="dropdown-item" href="#">Open</a>
+                                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                                        <a class="dropdown-item" href="#">Rename</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="ri-file-text-line font-size-16 align-middle text-muted me-2"></i> Changes list.txt</a></td>
+                                                            <td>09-10-2020, 17:05</td>
+                                                            <td>07 KB</td>
+                                                            
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                        <i class="ri-menu-5-line"></i>
+                                                                    </a>
+                                                                    
+                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                        <a class="dropdown-item" href="#">Open</a>
+                                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                                        <a class="dropdown-item" href="#">Rename</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="ri-image-2-line font-size-16 align-middle text-success me-2"></i> Img-2.png</a></td>
+                                                            <td>09-10-2020, 15:12</td>
+                                                            <td>31 KB</td>
+                                                            
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                        <i class="ri-menu-5-line"></i>
+                                                                    </a>
+                                                                    
+                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                        <a class="dropdown-item" href="#">Open</a>
+                                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                                        <a class="dropdown-item" href="#">Rename</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="ri-folder-2-fill font-size-16 align-middle text-warning me-2"></i> Project C</a></td>
+                                                            <td>09-10-2020, 10:11</td>
+                                                            <td>20 KB</td>
+                                                            
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                        <i class="ri-menu-5-line"></i>
+                                                                    </a>
+                                                                    
+                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                        <a class="dropdown-item" href="#">Open</a>
+                                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                                        <a class="dropdown-item" href="#">Rename</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="javascript: void(0);" class="text-dark fw-medium"><i class="ri-file-text-linefont-size-16 align-middle text-primary me-2"></i> starter-page.html</a></td>
+                                                            <td>08-10-2020, 03:22</td>
+                                                            <td>11 KB</td>
+                                                            
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                        <i class="ri-menu-5-line"></i>
+                                                                    </a>
+                                                                    
+                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                        <a class="dropdown-item" href="#">Open</a>
+                                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                                        <a class="dropdown-item" href="#">Rename</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                            <div class="" style="position: relative;">
+                                                <h5 class="font-size-16 pt-4">Usage Storage</h5>
+												<br>
+                                                <div id="stroked_radialbar" data-colors="[&quot;#3b76e1&quot;]" class="apex-charts" dir="ltr" style="min-height: 251.775px;"><div id="apexcharts8pwe01ltg" class="apexcharts-canvas apexcharts8pwe01ltg apexcharts-theme-light" style="width: 216px; height: 251.775px;"><svg id="SvgjsSvg1066" width="216" height="251.775" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, -20)" style="background: transparent;"><g id="SvgjsG1068" class="apexcharts-inner apexcharts-graphical" transform="translate(-14, 0)"><defs id="SvgjsDefs1067"><clipPath id="gridRectMask8pwe01ltg"><rect id="SvgjsRect1070" width="252" height="270" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMask8pwe01ltg"><rect id="SvgjsRect1071" width="250" height="272" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><linearGradient id="SvgjsLinearGradient1076" x1="1" y1="0" x2="0" y2="1"><stop id="SvgjsStop1077" stop-opacity="1" stop-color="rgba(242,242,242,1)" offset="0"></stop><stop id="SvgjsStop1078" stop-opacity="1" stop-color="rgba(206,206,206,1)" offset="0.5"></stop><stop id="SvgjsStop1079" stop-opacity="1" stop-color="rgba(206,206,206,1)" offset="0.65"></stop><stop id="SvgjsStop1080" stop-opacity="1" stop-color="rgba(242,242,242,1)" offset="0.91"></stop></linearGradient><linearGradient id="SvgjsLinearGradient1088" x1="1" y1="0" x2="0" y2="1"><stop id="SvgjsStop1089" stop-opacity="1" stop-color="rgba(59,118,225,1)" offset="0"></stop><stop id="SvgjsStop1090" stop-opacity="1" stop-color="rgba(50,100,191,1)" offset="0.5"></stop><stop id="SvgjsStop1091" stop-opacity="1" stop-color="rgba(50,100,191,1)" offset="0.65"></stop><stop id="SvgjsStop1092" stop-opacity="1" stop-color="rgba(59,118,225,1)" offset="0.91"></stop></linearGradient></defs><g id="SvgjsG1072" class="apexcharts-radialbar"><g id="SvgjsG1073"><g id="SvgjsG1074" class="apexcharts-tracks"><g id="SvgjsG1075" class="apexcharts-radialbar-track apexcharts-track" rel="1"><path id="apexcharts-radialbarTrack-0" d="M 70.8508748874921 175.14912511250787 A 73.75000000000001 73.75000000000001 0 1 1 175.1491251125079 175.14912511250787" fill="none" fill-opacity="1" stroke="rgba(242,242,242,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="22.795000000000005" stroke-dasharray="0" class="apexcharts-radialbar-area" data:pathOrig="M 70.8508748874921 175.14912511250787 A 73.75000000000001 73.75000000000001 0 1 1 175.1491251125079 175.14912511250787"></path></g></g><g id="SvgjsG1082"><g id="SvgjsG1087" class="apexcharts-series apexcharts-radial-series" seriesName="64xGBxused" rel="1" data:realIndex="0"><path id="SvgjsPath1093" d="M 70.8508748874921 175.14912511250787 A 73.75000000000001 73.75000000000001 0 1 1 192.73199495044963 98.9893486087847" fill="none" fill-opacity="0.85" stroke="url(#SvgjsLinearGradient1088)" stroke-opacity="1" stroke-linecap="butt" stroke-width="23.500000000000004" stroke-dasharray="4" class="apexcharts-radialbar-area apexcharts-radialbar-slice-0" data:angle="206" data:value="76.2" index="0" j="0" data:pathOrig="M 70.8508748874921 175.14912511250787 A 73.75000000000001 73.75000000000001 0 1 1 192.73199495044963 98.9893486087847"></path></g><circle id="SvgjsCircle1083" r="57.35250000000001" cx="123" cy="123" class="apexcharts-radialbar-hollow" fill="transparent"></circle><g id="SvgjsG1084" class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)" style="opacity: 1;"><text id="SvgjsText1085" font-family="Helvetica, Arial, sans-serif" x="123" y="243" text-anchor="middle" dominant-baseline="auto" font-size="16px" font-weight="400" fill="#3b76e1" class="apexcharts-text apexcharts-datalabel-label" style="font-family: Helvetica, Arial, sans-serif;">64 GB used</text><text id="SvgjsText1086" font-family="Helvetica, Arial, sans-serif" x="123" y="215" text-anchor="middle" dominant-baseline="auto" font-size="20px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-datalabel-value" style="font-family: Helvetica, Arial, sans-serif;">76.2%</text></g></g></g></g><line id="SvgjsLine1094" x1="0" y1="0" x2="246" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1095" x1="0" y1="0" x2="246" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line></g><g id="SvgjsG1069" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend"></div></div></div> 
+                                                <div>
+                                                    <h5 class="font-size-16 mb-3">Recent Files</h5>
+                                                    <div class="card border shadow-none mb-2">
+                                                        <a href="javascript: void(0);" class="text-body">
+                                                            <div class="p-2">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="avatar align-self-center me-3">
+                                                                        <div class="avatar-title rounded bg-soft-success text-success font-size-24">
+                                                                            <i class="ri-image-2-line"></i>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                    <div class="overflow-hidden me-auto">
+                                                                        <h5 class="font-size-15 text-truncate mb-1">Images</h5>
+                                                                        <p class="text-muted text-truncate mb-0">176 Files</p>
+                                                                    </div>
+                
+                                                                    <div class="ms-2">
+                                                                        <p class="text-muted">6 GB</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+            
+                                                    <div class="card border shadow-none mb-2">
+                                                        <a href="javascript: void(0);" class="text-body">
+                                                            <div class="p-2">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="avatar align-self-center me-3">
+                                                                        <div class="avatar-title rounded bg-soft-danger text-danger font-size-24">
+                                                                            <i class="ri-play-circle-line"></i>
+                                                                        </div>
+                                                                    </div>
+            
+                                                                    <div class="overflow-hidden me-auto">
+                                                                        <h5 class="font-size-15 text-truncate mb-1">Video</h5>
+                                                                        <p class="text-muted text-truncate mb-0">45 Files</p>
+                                                                    </div>
+            
+                                                                    <div class="ms-2">
+                                                                        <p class="text-muted">4.1 GB</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+            
+                                                    <div class="card border shadow-none mb-2">
+                                                        <a href="javascript: void(0);" class="text-body">
+                                                            <div class="p-2">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="avatar align-self-center me-3">
+                                                                        <div class="avatar-title rounded bg-soft-info text-info font-size-24">
+                                                                            <i class="ri-album-line"></i>
+                                                                        </div>
+                                                                    </div>
+            
+                                                                    <div class="overflow-hidden me-auto">
+                                                                        <h5 class="font-size-15 text-truncate mb-1">Music</h5>
+                                                                        <p class="text-muted text-truncate mb-0">21 Files</p>
+                                                                    </div>
+            
+                                                                    <div class="ms-2">
+                                                                        <p class="text-muted">3.2 GB</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+            
+                                                    <div class="card border shadow-none mb-2">
+                                                        <a href="javascript: void(0);" class="text-body">
+                                                            <div class="p-2">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="avatar align-self-center me-3">
+                                                                        <div class="avatar-title rounded bg-soft-primary text-primary font-size-24">
+                                                                            <i class="ri-file-text-line"></i>
+                                                                        </div>
+                                                                    </div>
+            
+                                                                    <div class="overflow-hidden me-auto">
+                                                                        <h5 class="font-size-15 text-truncate mb-1">Document</h5>
+                                                                        <p class="text-muted text-truncate mb-0">21 Files</p>
+                                                                    </div>
+            
+                                                                    <div class="ms-2">
+                                                                        <p class="text-muted">2 GB</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+            
+                                                    <div class="card border shadow-none">
+                                                        <a href="javascript: void(0);" class="text-body">
+                                                            <div class="p-2">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="avatar align-self-center me-3">
+                                                                        <div class="avatar-title rounded bg-soft-warning text-warning font-size-24">
+                                                                            <i class="ri-folder-2-fill"></i>
+                                                                        </div>
+                                                                    </div>
+            
+                                                                    <div class="overflow-hidden me-auto">
+                                                                        <h5 class="font-size-15 text-truncate mb-1">Others</h5>
+                                                                        <p class="text-muted text-truncate mb-0">20 Files</p>
+                                                                    </div>
+            
+                                                                    <div class="ms-2">
+                                                                        <p class="text-muted">1.4 GB</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            
+                                                
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+</section>
 
 
     
