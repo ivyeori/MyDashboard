@@ -1,14 +1,4 @@
-<?php
-// (A) THIS IS A PROTECTED DUMMY PAGE
-require "../login/protect.php";
-
-// (B) HTML AS USUAL ?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
@@ -59,7 +49,7 @@ require "../login/protect.php";
         <li class="nav-item dropdown">
 
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-          <i class='ri-discuss-line' ></i>
+          <i class="ri-discuss-line"></i>
             <span class="badge bg-success badge-number">20</span>
           </a><!-- End Messages Icon -->
 
@@ -126,12 +116,12 @@ require "../login/protect.php";
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="..\assets/img/profile.svg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2"><?php echo $_SESSION["user"]; ?></span>
+            <span class="d-none d-md-block dropdown-toggle ps-2">admin</span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6><?php echo $_SESSION["user"]; ?></h6>
+              <h6>admin</h6>
              
             </li>
             <li>
@@ -175,7 +165,7 @@ require "../login/protect.php";
                 <i class="bi bi-box-arrow-right"></i>
                 
                
-                <span type="submit"  value="Sign Out"> Sign out </span>
+                <span type="submit" value="Sign Out"> Sign out </span>
                
 </button>
               </form>
@@ -194,17 +184,17 @@ require "../login/protect.php";
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
-      <li class="nav-item">
-        <a class="nav-link " href="./">
-          <i class="bi bi-grid"></i>
-          <i class="ri-dashboard-line"></i> <span>Dashboard</span>
-        </a>
-      </li><!-- End Dashboard Nav -->
+    <li class="nav-item">
+    <a class="nav-link collapsed" href="./">
+    <i class="ri-dashboard-line"></i> <span>Dashboard</span>
+        
+        </a><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="files.php">
+        
+        <a class="nav-link " href="./files.php">
           
-          <i class="ri-folder-2-line"></i><span>File Manager</span>
+        <i class="ri-folder-2-line"></i><span>File Manager</span>
         </a>
       </li><!-- End Blank Page Nav -->
       <li class="nav-item">
@@ -228,1055 +218,313 @@ require "../login/protect.php";
 
  
             
+  <section class="section dashboard">
+  <div class="container">
+<div class="row">
+    <div class="col-12 col-lg-3">
+		<div class="card">
+			<div class="card-body">
+            <div class="page-aside-left pt-3">
 
-              <nav>
-                <ol class="breadcrumb">
-                 
-                  <p class="breadcrumb-item">
-                  <?php
-  date_default_timezone_set("UTC");
-  $timezone = date_default_timezone_get();
-  $hour = date("G", time());
-
-  if ($hour >= 0 && $hour < 5) {
-    echo "Good Night, ".$_SESSION["user"];
-  } elseif ($hour >= 5 && $hour < 10) {
-    echo "Good Morning, ".$_SESSION["user"];
-  } elseif ($hour >= 10 && $hour < 15) {
-    echo "Good Noon, ".$_SESSION["user"];
-  } elseif ($hour >= 15 && $hour < 19) {
-    echo "Good Afternoon, ".$_SESSION["user"];
-  } elseif ($hour >= 19 && $hour < 22) {
-    echo "Good Evening, ".$_SESSION["user"];
-  } elseif ($hour >= 22 && $hour < 24) {
-    echo "Good Night, ".$_SESSION["user"];
-  }
-?>
-                  </p>
-                </ol>
-              </nav>
-            
-       
-
-    <section class="section dashboard">
-    <div class="container">
-    <div class="row">
-  <div class="col ">  <div class="card info-card revenue-card">
-
-<div class="filter">
-  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="ri-menu-5-line"></i></a>
-  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-    <li class="dropdown-header text-start">
-      <h6>Optionen</h6>
-    </li>
-
-
-    <li><a class="dropdown-item" href="#">Vergrößern</a></li>
-    <li><a class="dropdown-item" href="#">Verbergen</a></li>
-  </ul>
-</div>
-
-<div class="card-body">
-  <h5 class="card-title">Wetter </span></h5>
-
-  <div class="d-flex align-items-center">
-    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-      <i class="ri-sun-foggy-line"></i>
-    </div>
-    <div class="ps-3">
-      <h6>6°C, foggy </h6>
-
-
-    </div>
-  </div>
-</div>
-
-</div></div>
-  <div class="col ">  <div class="card info-card customers-card" data-bs-toggle="modal" data-bs-target="#ExtralargeModal">
-
-
-
-<div class="card-body">
-  <h5 class="card-title">Ungelesene Mails</span></h5>
-
-  <div class="d-flex align-items-center">
-    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-      <i class="ri-mail-open-line"></i>
-    </div>
-    <div class="ps-3">
-      <h6>50</h6>
-      
-
-    </div>
-  </div>
-
-</div>
-</div></div>
-  <div class="col ">  <div class="card info-card customers-card">
-
-<div class="filter">
-  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="ri-menu-5-line"></i></a>
-  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-    <li class="dropdown-header text-start">
-      <h6>Optionen</h6>
-    </li>
-
-
-    <li><a class="dropdown-item" href="#">Vergrößern</a></li>
-    <li><a class="dropdown-item" href="#">Verbergen</a></li>
-  </ul>
-</div>
-
-<div class="card-body">
-  <h5 class="card-title">Verpasste Nachrichten</span></h5>
-
-  <div class="d-flex align-items-center">
-    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-      <i class="ri-message-2-line"></i>
-    </div>
-    <div class="ps-3">
-      <h6>20</h6>
-      
-
-    </div>
-  </div>
-
-</div>
-</div></div>
-  <div class="col ">  <div class="card info-card customers-card">
-
-<div class="filter">
-  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="ri-menu-5-line"></i></a>
-  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-    <li class="dropdown-header text-start">
-      <h6>Optionen</h6>
-    </li>
-
-
-    <li><a class="dropdown-item" href="#">Vergrößern</a></li>
-    <li><a class="dropdown-item" href="#">Verbergen</a></li>
-  </ul>
-</div>
-
-<div class="card-body">
-  <h5 class="card-title">Zeit</h5>
-
-  <div class="d-flex align-items-center">
-    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-      <i class="ri-time-line"></i>
-    </div>
-    <div class="ps-3">
-    
-    <h6 id="refreshed-content">
-  <?php
-  date_default_timezone_set('Europe/Berlin');
-  echo date("H:i");
-  ?>
-</h6>
-
-
-      <script>
-  function refreshContent() {
-    // Make an AJAX request to the current page to refresh the content
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", window.location.href, true);
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-        // Find the updated content in the response and update the div
-        var parser = new DOMParser();
-        var response = parser.parseFromString(xhr.responseText, "text/html");
-        var updatedContent = response.getElementById("refreshed-content").innerHTML;
-        document.getElementById("refreshed-content").innerHTML = updatedContent;
-      }
-    };
-    xhr.send();
-
-    // Schedule the next refresh
-    setTimeout(refreshContent, 60000);
-  }
-
-  // Start the refresh cycle
-  refreshContent();
-</script>
-
-    </div>
-  </div>
-
-</div>
-</div></div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col">
-   <!-- Default Card -->
-   <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">File Manager | <span>View All</span></h5>
-              <div class="">
-                                                    
-                                                  
-        
-                                                    <div class="table-responsive">
-                                                        <table class="table align-middle table-nowrap table-hover mb-0">
-                                                            <thead>
-                                                                <tr>
-                                                                  <th scope="col">Name</th>
-                                                                  <th scope="col">Date modified</th>
-                                                                  <th scope="col" colspan="2">Size</th>
-                                                                </tr>
-                                                              </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                  
-                                                                    <td><i class="ri-code-box-line"></i></i><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-file-document font-size-16 align-middle text-primary "></i> index.html</a></td>
-                                                                    <td>12-10-2020, 09:45</td>
-                                                                    <td>09 KB</td>
-                                                                    <td>
-                                                                        <div class="dropdown">
-                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                                <i class="mdi mdi-dots-horizontal"></i>
-                                                                            </a>
-                                                                            
-                                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                                <a class="dropdown-item" href="#">Open</a>
-                                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                                <a class="dropdown-item" href="#">Rename</a>
-                                                                                <div class="dropdown-divider"></div>
-                                                                                <a class="dropdown-item" href="#">Remove</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><i class="ri-folder-zip-line"></i><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-folder-zip font-size-16 align-middle text-warning "></i> Project-A.zip</a></td>
-                                                                    <td>11-10-2020, 17:05</td>
-                                                                    <td>115 KB</td>
-                                                                    <td>
-                                                                        <div class="dropdown">
-                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                                <i class="mdi mdi-dots-horizontal"></i>
-                                                                            </a>
-                                                                            
-                                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                                <a class="dropdown-item" href="#">Open</a>
-                                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                                <a class="dropdown-item" href="#">Rename</a>
-                                                                                <div class="dropdown-divider"></div>
-                                                                                <a class="dropdown-item" href="#">Remove</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><i class="ri-image-2-line"></i><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-image font-size-16 align-middle text-muted "></i> Img-1.jpeg</a></td>
-                                                                    <td>11-10-2020, 13:26</td>
-                                                                    <td>86 KB</td>
-                                                                    <td>
-                                                                        <div class="dropdown">
-                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                                <i class="mdi mdi-dots-horizontal"></i>
-                                                                            </a>
-                                                                            
-                                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                                <a class="dropdown-item" href="#">Open</a>
-                                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                                <a class="dropdown-item" href="#">Rename</a>
-                                                                                <div class="dropdown-divider"></div>
-                                                                                <a class="dropdown-item" href="#">Remove</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><i class="ri-file-text-line"></i><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-text-box font-size-16 align-middle text-muted "></i> update list.txt</a></td>
-                                                                    <td>10-10-2020, 11:32</td>
-                                                                    <td>08 KB</td>
-                                                                    <td>
-                                                                        <div class="dropdown">
-                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                                <i class="mdi mdi-dots-horizontal"></i>
-                                                                            </a>
-                                                                            
-                                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                                <a class="dropdown-item" href="#">Open</a>
-                                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                                <a class="dropdown-item" href="#">Rename</a>
-                                                                                <div class="dropdown-divider"></div>
-                                                                                <a class="dropdown-item" href="#">Remove</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><i class="ri-folder-2-line"></i><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-folder font-size-16 align-middle text-warning "></i> Project B</a></td>
-                                                                    <td>10-10-2020, 10:51</td>
-                                                                    <td>72 KB</td>
-                                                                    <td>
-                                                                        <div class="dropdown">
-                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                                <i class="mdi mdi-dots-horizontal"></i>
-                                                                            </a>
-                                                                            
-                                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                                <a class="dropdown-item" href="#">Open</a>
-                                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                                <a class="dropdown-item" href="#">Rename</a>
-                                                                                <div class="dropdown-divider"></div>
-                                                                                <a class="dropdown-item" href="#">Remove</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><i class="ri-file-text-line"></i><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-text-box font-size-16 align-middle text-muted "></i> Changes list.txt</a></td>
-                                                                    <td>09-10-2020, 17:05</td>
-                                                                    <td>07 KB</td>
-                                                                    <td>
-                                                                        <div class="dropdown">
-                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                                <i class="mdi mdi-dots-horizontal"></i>
-                                                                            </a>
-                                                                            
-                                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                                <a class="dropdown-item" href="#">Open</a>
-                                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                                <a class="dropdown-item" href="#">Rename</a>
-                                                                                <div class="dropdown-divider"></div>
-                                                                                <a class="dropdown-item" href="#">Remove</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><i class="ri-image-2-line"></i><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-image font-size-16 align-middle text-success "></i> Img-2.png</a></td>
-                                                                    <td>09-10-2020, 15:12</td>
-                                                                    <td>31 KB</td>
-                                                                    <td>
-                                                                        <div class="dropdown">
-                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                                <i class="mdi mdi-dots-horizontal"></i>
-                                                                            </a>
-                                                                            
-                                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                                <a class="dropdown-item" href="#">Open</a>
-                                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                                <a class="dropdown-item" href="#">Rename</a>
-                                                                                <div class="dropdown-divider"></div>
-                                                                                <a class="dropdown-item" href="#">Remove</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><i class="ri-folder-2-line"></i><a href="javascript: void(0);" class="text-dark fw-medium"><i class="mdi mdi-folder font-size-16 align-middle text-warning "></i> Project C</a></td>
-                                                                    <td>09-10-2020, 10:11</td>
-                                                                    <td>20 KB</td>
-                                                                    <td>
-                                                                        <div class="dropdown">
-                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                                <i class="mdi mdi-dots-horizontal"></i>
-                                                                            </a>
-                                                                            
-                                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                                <a class="dropdown-item" href="#">Open</a>
-                                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                                <a class="dropdown-item" href="#">Rename</a>
-                                                                                <div class="dropdown-divider"></div>
-                                                                                <a class="dropdown-item" href="#">Remove</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><i class="ri-code-box-line"></i><a href="javascript: void(0);" class="text-dark fw-medium"><i class="bx bxs-file font-size-16 align-middle text-primary "></i> starter-page.html</a></td>
-                                                                    <td>08-10-2020, 03:22</td>
-                                                                    <td>11 KB</td>
-                                                                    <td>
-                                                                        <div class="dropdown">
-                                                                            <a class="font-size-16 text-muted" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                                <i class="mdi mdi-dots-horizontal"></i>
-                                                                            </a>
-                                                                            
-                                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                                <a class="dropdown-item" href="#">Open</a>
-                                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                                <a class="dropdown-item" href="#">Rename</a>
-                                                                                <div class="dropdown-divider"></div>
-                                                                                <a class="dropdown-item" href="#">Remove</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                            <div class="btn-group d-block mb-2">
+                                                <button type="button" class="btn btn-success dropdown-toggle w-100" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-plus"></i> Create New </button>
+                                                <div class="dropdown-menu" style="">
+                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-folder-plus-outline me-1"></i> Folder</a>
+                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-file-plus-outline me-1"></i> File</a>
+                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-file-document me-1"></i> Document</a>
+                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-upload me-1"></i> Choose File</a>
                                                 </div>
-            </div>
-          </div><!-- End Default Card -->
-    </div>
-    <div class="col">
-    <!-- Default Card -->
-    <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">News &amp; Updates</h5>
-              
-              
+                                            </div>
+                                            <div class="email-menu-list mt-3">
+                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-folder-outline font-18 align-middle me-2"></i>My Files</a>
+                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-google-drive font-18 align-middle me-2"></i>Google Drive</a>
+                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-dropbox font-18 align-middle me-2"></i>Dropbox</a>
+                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-share-variant font-18 align-middle me-2"></i>Share with me</a>
+                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-clock-outline font-18 align-middle me-2"></i>Recent</a>
+                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-star-outline font-18 align-middle me-2"></i>Starred</a>
+                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-delete font-18 align-middle me-2"></i>Deleted Files</a>
+                                            </div>
+    
+                                            <div class="mt-5">
+                                                <h4><span class="badge rounded-pill p-1 px-2 badge-secondary-lighten">FREE</span></h4>
+                                                <h6 class="text-uppercase mt-3">Storage</h6>
+                                                <div class="progress my-2 progress-sm">
+                                                    <div class="progress-bar progress-lg bg-success" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <p class="text-muted font-12 mb-0">7.02 GB (46%) of 15 GB used</p>
+                                            </div>
 
-            <div class="card-body pb-0">
-            
-
-              <div class="news">
-                <div class="post-item clearfix"> 
-                  <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
-                  <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
-                </div>
-
-                <div class="post-item clearfix">
-                  <img scr="..\assets/img/news-2.jpg" alt="">
-                  <h4><a href="#">Quidem autem et impedit</a></h4>
-                  <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
-                </div>
-
-                <div class="post-item clearfix">
-                  <img scr="..\assets/img/news-3.jpg" alt="">
-                  <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
-                  <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
-                </div>
-
-                <div class="post-item clearfix">
-                  <img scr="..\assets/img/news-4.jpg" alt="">
-                  <h4><a href="#">Laborum corporis quo dara net para</a></h4>
-                  <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
-                </div>
-
-                <div class="post-item clearfix pb-3">
-                  <img scr="..\assets/img/news-5.jpg" alt="">
-                  <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
-                  <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
-                </div>
-
-              </div><!-- End sidebar recent posts-->
-
-            </div>
-            </div>
-          </div><!-- End Default Card -->
-    </div>
-  </div>
-
-          <div class="container">
-          <div class="row">
-     <div class="col ">
-      <!-- Default Card -->
-      <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">To-Dos</h5>
-             
-              <div id="container">
-              <div class="container">
-              <div class="row">
-              <div class="col">
-              <button id="addTaskBtn" class="btn btn-primary">Add Task</button>
-              
-              <button id="deleteCompletedBtn" class="btn btn-danger ">Delete Completed</button>
-              
-              <button id="selectAllBtn" class="btn btn-info ">Select All</button>
-              <div class="pb-md-0 pb-3"></div> 
+                                        </div>
+			</div>
+		</div>
+		<div class="card">
+			
+		</div>
+	</div>
+	<div class="col-12 col-lg-9">
+		<div class="card">
+			<div class="card-body">
+				<div class="fm-search">
+					<div class="mb-0 pt-3">
+						<div class="input-group input-group-lg">	<span class="input-group-text bg-transparent"><i class="fa fa-search"></i></span>
+							<input type="text" class="form-control " placeholder="Search the files">
+						</div>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<div class="col-12 col-lg-4">
+						<div class="card shadow-none border radius-15">
+							<div class="card-body">
+								<div class="d-flex align-items-center">
+									<div class="fm-icon-box radius-15 bg-primary text-white"><i class="lni lni-google-drive"></i>
+									</div>
+									<div class="ms-auto font-24"><i class="fa fa-ellipsis-h"></i>
+									</div>
+								</div>
+								<h5 class="mt-3 mb-0">Google Drive</h5>
+								<p class="mb-1 mt-4"><span>45.5 GB</span>  <span class="float-end">50 GB</span>
+								</p>
+								<div class="progress" style="height: 7px;">
+									<div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="card shadow-none border radius-15">
+							<div class="card-body">
+								<div class="d-flex align-items-center">
+									<div class="fm-icon-box radius-15 bg-danger text-white"><i class="lni lni-dropbox-original"></i>
+									</div>
+									<div class="ms-auto font-24"><i class="fa fa-ellipsis-h"></i>
+									</div>
+								</div>
+								<h5 class="mt-3 mb-0">Dropbox</h5>
+								<p class="mb-1 mt-4"><span>1,2 GB</span>  <span class="float-end">3 GB</span>
+								</p>
+								<div class="progress" style="height: 7px;">
+									<div class="progress-bar bg-danger" role="progressbar" style="width: 45%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="card shadow-none border radius-15">
+							<div class="card-body">
+								<div class="d-flex align-items-center">
+									<div class="fm-icon-box radius-15 bg-warning text-dark"><i class="bx bxs-door-open"></i>
+									</div>
+									<div class="ms-auto font-24"><i class="fa fa-ellipsis-h"></i>
+									</div>
+								</div>
+								<h5 class="mt-3 mb-0">OneDrive</h5>
+								<p class="mb-1 mt-4"><span>2,5 GB</span>  <span class="float-end">3 GB</span>
+								</p>
+								<div class="progress" style="height: 7px;">
+									<div class="progress-bar bg-warning" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end row-->
+				<h5>Folders</h5>
+				<div class="row mt-3">
+					<div class="col-12 col-lg-4">
+						<div class="card shadow-none border radius-15">
+							<div class="card-body">
+								<div class="d-flex align-items-center">
+									<div class="font-30 text-primary"><i class="bx bxs-folder"></i>
+									</div>
+									<div class="user-groups ms-auto">
+										<img src="https://bootdey.com/img/Content/avatar/avatar1.png" width="35" height="35" class="rounded-circle" alt="">
+										<img src="https://bootdey.com/img/Content/avatar/avatar2.png" width="35" height="35" class="rounded-circle" alt="">
+									</div>
+									<div class="user-plus">+</div>
+								</div>
+								<h6 class="mb-0 text-primary">Analytics</h6>
+								<small>15 files</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="card shadow-none border radius-15">
+							<div class="card-body">
+								<div class="d-flex align-items-center">
+									<div class="font-30 text-primary"><i class="bx bxs-folder"></i>
+									</div>
+									<div class="user-groups ms-auto">
+										<img src="https://bootdey.com/img/Content/avatar/avatar7.png" width="35" height="35" class="rounded-circle" alt="">
+									</div>
+								</div>
+								<h6 class="mb-0 text-primary">Assets</h6>
+								<small>345 files</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="card shadow-none border radius-15">
+							<div class="card-body">
+								<div class="d-flex align-items-center">
+									<div class="font-30 text-primary"><i class="bx bxs-folder"></i>
+									</div>
+									<div class="user-groups ms-auto">
+										<img src="https://bootdey.com/img/Content/avatar/avatar2.png" width="35" height="35" class="rounded-circle" alt="">
+										<img src="https://bootdey.com/img/Content/avatar/avatar3.png" width="35" height="35" class="rounded-circle" alt="">
+									</div>
+								</div>
+								<h6 class="mb-0 text-primary">Marketing</h6>
+								<small>143 files</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end row-->
+				<div class="d-flex align-items-center">
+					<div>
+						<h5 class="mb-0">Recent Files</h5>
+					</div>
+					<div class="ms-auto"><a href="javascript:;" class="btn btn-sm btn-outline-secondary">View all</a>
+					</div>
+				</div>
+				<div class="table-responsive mt-3">
+					<table class="table table-striped table-hover table-sm mb-0">
+						<thead>
+							<tr>
+								<th>Name <i class="bx bx-up-arrow-alt ms-2"></i>
+								</th>
+								<th>Members</th>
+								<th>Last Modified</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="d-flex align-items-center">
+										<div><i class="bx bxs-file-pdf me-2 font-24 text-danger"></i>
+										</div>
+										<div class="font-weight-bold text-danger">Competitor Analysis Template</div>
+									</div>
+								</td>
+								<td>Only you</td>
+								<td>Sep 3, 2019</td>
+								<td><i class="fa fa-ellipsis-h font-24"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="d-flex align-items-center">
+										<div><i class="bx bxs-file me-2 font-24 text-primary"></i>
+										</div>
+										<div class="font-weight-bold text-primary">How to Create a Case Study</div>
+									</div>
+								</td>
+								<td>3 members</td>
+								<td>Jun 12, 2019</td>
+								<td><i class="fa fa-ellipsis-h font-24"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="d-flex align-items-center">
+										<div><i class="bx bxs-file me-2 font-24 text-primary"></i>
+										</div>
+										<div class="font-weight-bold text-primary">Landing Page Structure</div>
+									</div>
+								</td>
+								<td>10 members</td>
+								<td>Jul 17, 2019</td>
+								<td><i class="fa fa-ellipsis-h font-24"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="d-flex align-items-center">
+										<div><i class="bx bxs-file-pdf me-2 font-24 text-danger"></i>
+										</div>
+										<div class="font-weight-bold text-danger">Meeting Report</div>
+									</div>
+								</td>
+								<td>5 members</td>
+								<td>Aug 28, 2019</td>
+								<td><i class="fa fa-ellipsis-h font-24"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="d-flex align-items-center">
+										<div><i class="bx bxs-file me-2 font-24 text-primary"></i>
+										</div>
+										<div class="font-weight-bold text-primary">Project Documents</div>
+									</div>
+								</td>
+								<td>Only you</td>
+								<td>Aug 17, 2019</td>
+								<td><i class="fa fa-ellipsis-h font-24"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="d-flex align-items-center">
+										<div><i class="bx bxs-file-doc me-2 font-24 text-success"></i>
+										</div>
+										<div class="font-weight-bold text-success">Review Checklist Template</div>
+									</div>
+								</td>
+								<td>7 members</td>
+								<td>Sep 8, 2019</td>
+								<td><i class="fa fa-ellipsis-h font-24"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="d-flex align-items-center">
+										<div><i class="bx bxs-file me-2 font-24 text-primary"></i>
+										</div>
+										<div class="font-weight-bold text-primary">How to Create a Case Study</div>
+									</div>
+								</td>
+								<td>3 members</td>
+								<td>Jun 12, 2019</td>
+								<td><i class="fa fa-ellipsis-h font-24"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="d-flex align-items-center">
+										<div><i class="bx bxs-file me-2 font-24 text-primary"></i>
+										</div>
+										<div class="font-weight-bold text-primary">Landing Page Structure</div>
+									</div>
+								</td>
+								<td>10 members</td>
+								<td>Jul 17, 2019</td>
+								<td><i class="fa fa-ellipsis-h font-24"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="d-flex align-items-center">
+										<div><i class="bx bxs-file-doc me-2 font-24 text-success"></i>
+										</div>
+										<div class="font-weight-bold text-success">Review Checklist Template</div>
+									</div>
+								</td>
+								<td>7 members</td>
+								<td>Sep 8, 2019</td>
+								<td><i class="fa fa-ellipsis-h font-24"></i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+</div></div></div></section>
 
-<div class="pb-md-0 pb-3"></div>
-              
-              
-             
-              <div class="col">
-              <div class=" pb-3"></div> 
-              <input type="text" class="form-control "   id="taskInput">
-              <div class="w-100"></div>
-              <div class="pb-3"></div>
-              </div>
-             
-              <ul id="taskList" class="pb-3"></ul>
-              
-  </div>
-</div>
-  
-  
-
-  
-  
-  
-
-</div>
-<script>
-const addTaskBtn = document.getElementById("addTaskBtn");
-const taskInput = document.getElementById("taskInput");
-const taskList = document.getElementById("taskList");
-const deleteCompletedBtn = document.getElementById("deleteCompletedBtn");
-
-const loadTasks = function () {
-  const taskData = JSON.parse(localStorage.getItem("tasks")) || [];
-  taskData.forEach(function (task) {
-    const taskItem = document.createElement("li");
-    taskItem.innerHTML = `
-      <input type="checkbox" ${task.completed ? "checked" : ""} class="form-check-input">
-      <label class="form-check-label">${task.text}</label>
-    `;
-    taskItem.classList.add("form-check");
-    taskList.appendChild(taskItem);
-  });
-};
-
-const saveTasks = function () {
-  const taskData = [];
-  taskList.querySelectorAll("li").forEach(function (taskItem) {
-    const checkbox = taskItem.querySelector("input[type=checkbox]");
-    taskData.push({
-      text: taskItem.textContent.trim(),
-      completed: checkbox.checked,
-    });
-  });
-
-  localStorage.setItem("tasks", JSON.stringify(taskData));
-};
-
-addTaskBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-  const taskValue = taskInput.value;
-  if (!taskValue) return;
-
-  const taskItem = document.createElement("li");
-  taskItem.innerHTML = `
-    <input type="checkbox" class="form-check-input">
-    <label class="form-check-label">${taskValue}</label>
-  `;
-  taskItem.classList.add("form-check");
-  taskList.appendChild(taskItem);
-  taskInput.value = "";
-  saveTasks();
-  
-  if (taskList.childElementCount > 10) {
-    taskList.style.overflowY = "scroll";
-  
-  }
-});
-
-deleteCompletedBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-  const completedTasks = taskList.querySelectorAll("input[type=checkbox]:checked");
-  completedTasks.forEach(function (task) {
-    task.parentElement.remove();
-  });
-  saveTasks();
-});
-
-taskList.addEventListener("change", function (event) {
-  if (event.target.matches("input[type=checkbox]")) {
-    saveTasks();
-  }
-});
-taskInput.addEventListener("keypress", function (event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    addTaskBtn.click();
-  }
-});
-if (taskList.childElementCount > 10) {
-  taskList.style.overflowY = "scroll";
-}
-const selectAllBtn = document.getElementById("selectAllBtn");
-
-selectAllBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-  const checkboxes = taskList.querySelectorAll("input[type=checkbox]");
-  checkboxes.forEach(function (checkbox) {
-    checkbox.checked = true;
-  });
-  const sortTasks = function () {
-  const completedTasks = [];
-  const activeTasks = [];
-  taskList.querySelectorAll("li").forEach(function (taskItem) {
-    const checkbox = taskItem.querySelector("input[type=checkbox]");
-    if (checkbox.checked) {
-      completedTasks.push(taskItem);
-    } else {
-      activeTasks.push(taskItem);
-    }
-  });
-  taskList.innerHTML = "";
-  activeTasks.forEach(function (taskItem) {
-    taskList.appendChild(taskItem);
-  });
-  completedTasks.forEach(function (taskItem) {
-    taskList.appendChild(taskItem);
-  });
-};
-taskList.addEventListener("change", function (event) {
-  if (event.target.matches("input[type=checkbox]")) {
-    saveTasks();
-    sortTasks();
-  }
-});
-
-const sortBtn = document.getElementById("sortBtn");
-sortBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-  sortTasks();
-});
-  saveTasks();
-});
-
-loadTasks();
-</script>
-            </div>
-          </div><!-- End Default Card -->
-    </div>
-    <div class="col d-none d-sm-block">
-      <!-- Default Card -->
-      <div class="card ">
-            <div class="card-body">
-              <h5 class="card-title">Errechneter Zeitersparnis</h5>
-                <!-- Line Chart -->
-              <canvas id="lineChart" style="max-height: 400px;"></canvas>
-              <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                  new Chart(document.querySelector('#lineChart'), {
-                    type: 'line',
-                    data: {
-                      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                      datasets: [{
-                        label: 'Ersparte Minuten',
-                        data: [65, 59, 80, 81, 56, 55, 40],
-                        fill: false,
-                        borderColor: 'rgb(75, 192, 192)',
-                        tension: 0.1
-                      }]
-                    },
-                    options: {
-                      scales: {
-                        y: {
-                          beginAtZero: true
-                        }
-                      }
-                    }
-                  });
-                });
-              </script>
-              <!-- End Line CHart -->
-            </div>
-          </div><!-- End Default Card -->
-    </div>
-  </div>
-          
-        
-    </section>
-    <div class="modal fade" id="ExtralargeModal" tabindex="-1">
-    <div class="modal-dialog modal-xl">
-                  <div class="modal-content">
-                  
-                    <div class="modal-body">
-                    <div class="container">
-<div class="row">
-
-<div class="col-md-12">
-<div class="grid email">
-<div class="grid-body">
-<div class="row">
-  <h1>Inbox</h1>
-
-<div class="row align-items-start">
-  <div class="col  w-auto"><a class="btn btn-block btn-primary" data-toggle="modal" data-target="#compose-modal"><i class="ri-pencil-line"></i> Neue Nachricht</a>
-  <a class="btn btn-block btn-warning" data-toggle="modal" data-target="#compose-modal"><i class="ri-spam-2-line"></i> Spam</a>
-  <a class="btn btn-block btn-danger" data-toggle="modal" data-target="#compose-modal"><i class="ri-delete-bin-7-line"></i> Löschen</a>
-  <a class="btn btn-block btn-info" data-toggle="modal" data-target="#compose-modal"><i class="ri-information-line"></i> Info</a></div>
-  
-
-
-
-
-
-
-
-
-</div>
-
-
-<div class="col-md-9">
-<div class="row">
-<div class="col-sm-6">
-<label style="margin-right: 8px;" class="">
-<div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" id="check-all" class="icheck" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
-</label>
-
-</div>
-
-</div>
-<div class="padding"></div>
-<div class="table-responsive">
-<table class="table">
-<tbody><tr>
-<td class="action"><input type="checkbox" /></td>
-<td class="action"><i class="fa fa-star-o"></i></td>
-<td class="action"><i class="fa fa-bookmark-o"></i></td>
-<td class="name"><a href="#">Larry Gardner</a></td>
-<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
-<td class="time">08:30 PM</td>
-</tr>
-<tr>
-<td class="action"><input type="checkbox" /></td>
-<td class="action"><i class="fa fa-star-o"></i></td>
-<td class="action"><i class="fa fa-bookmark"></i></td>
-<td class="name"><a href="#">Larry Gardner</a></td>
-<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
-<td class="time">08:30 PM</td>
-</tr>
-<tr class="read">
-<td class="action"><div class="icheckbox_square-blue" st<td class="action"><input type="checkbox" /></td>
-<td class="action"><i class="fa fa-star"></i></td>
-<td class="action"><i class="fa fa-bookmark"></i></td>
-<td class="name"><a href="#">Larry Gardner</a></td>
-<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
-<td class="time">08:30 PM</td>
-</tr>
-<tr>
-<td class="action"><input type="checkbox" /></td>
-<td class="action"><i class="fa fa-star-o"></i></td>
-<td class="action"><i class="fa fa-bookmark-o"></i></td>
-<td class="name"><a href="#">Larry Gardner</a></td>
-<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
-<td class="time">08:30 PM</td>
-</tr>
-<tr class="read">
-<td class="action"><input type="checkbox" /></td>
-<td class="action"><i class="fa fa-star-o"></i></td>
-<td class="action"><i class="fa fa-bookmark-o"></i></td>
-<td class="name"><a href="#">Larry Gardner</a></td>
-<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
-<td class="time">08:30 PM</td>
-</tr>
-<tr class="read">
-<td class="action"><input type="checkbox" /></td>
-<td class="action"><i class="fa fa-star-o"></i></td>
-<td class="action"><i class="fa fa-bookmark"></i></td>
-<td class="name"><a href="#">Larry Gardner</a></td>
-<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
-<td class="time">08:30 PM</td>
-</tr>
-<tr>
-<td class="action"><input type="checkbox" /></td>
-<td class="action"><i class="fa fa-star"></i></td>
-<td class="action"><i class="fa fa-bookmark-o"></i></td>
-<td class="name"><a href="#">Larry Gardner</a></td>
-<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
-<td class="time">08:30 PM</td>
-</tr>
-<tr>
-<td class="action"><input type="checkbox" /></td>
-<td class="action"><i class="fa fa-star-o"></i></td>
-<td class="action"><i class="fa fa-bookmark-o"></i></td>
-<td class="name"><a href="#">Larry Gardner</a></td>
-<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
-<td class="time">08:30 PM</td>
-</tr>
-<tr class="read">
-<td class="action"><input type="checkbox" /></td>
-<td class="action"><i class="fa fa-star"></i></td>
-<td class="action"><i class="fa fa-bookmark"></i></td>
-<td class="name"><a href="#">Larry Gardner</a></td>
-<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
-<td class="time">08:30 PM</td>
-</tr>
-<tr>
-<td class="action"><input type="checkbox" /></td>
-<td class="action"><i class="fa fa-star"></i></td>
-<td class="action"><i class="fa fa-bookmark-o"></i></td>
-<td class="name"><a href="#">Larry Gardner</a></td>
-<td class="subject"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
-<td class="time">08:30 PM</td>
-</tr>
-</tbody></table>
-</div>
-
-</div>
-
-
-<div class="modal fade" id="compose-modal" tabindex="-1" role="dialog" aria-hidden="true">
-<div class="modal-wrapper">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header bg-blue">
-<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-<h4 class="modal-title"><i class="fa fa-envelope"></i> Compose New Message</h4>
-</div>
-<form action="#" method="post">
-<div class="modal-body">
-<div class="form-group">
-<input name="to" type="email" class="form-control" placeholder="To">
-</div>
-<div class="form-group">
-<input name="cc" type="email" class="form-control" placeholder="Cc">
-</div>
-<div class="form-group">
-<input name="bcc" type="email" class="form-control" placeholder="Bcc">
-</div>
-<div class="form-group">
-<input name="subject" type="email" class="form-control" placeholder="Subject">
-</div>
-<div class="form-group">
-<textarea name="message" id="email_message" class="form-control" placeholder="Message" style="height: 120px;"></textarea>
-</div>
-<div class="form-group"> <input type="file" name="attachment">
-</div>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Discard</button>
-<button type="submit" class="btn btn-primary pull-right"><i class="fa fa-envelope"></i> Send Message</button>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-<style type="text/css">
-body{
-    margin-top:20px;
-    background:#eee;
-}
-/* EMAIL */
-.email {
-    padding: 20px 10px 15px 10px;
-	font-size: 1em;
-}
-
-.email .btn.search {
-	font-size: 0.9em;
-}
-
-.email h2 {
-	margin-top: 0;
-	padding-bottom: 8px;
-}
-
-.email .nav.nav-pills > li > a {
-	border-top: 3px solid transparent;
-}
-
-.email .nav.nav-pills > li > a > .fa {
-	margin-right: 5px;
-}
-
-.email .nav.nav-pills > li.active > a,
-.email .nav.nav-pills > li.active > a:hover {
-	background-color: #f6f6f6;
-	border-top-color: #3c8dbc;
-}
-
-.email .nav.nav-pills > li.active > a {
-	font-weight: 600;
-}
-
-.email .nav.nav-pills > li > a:hover {
-	background-color: #f6f6f6;
-}
-
-.email .nav.nav-pills.nav-stacked > li > a {
-	color: #666;
-	border-top: 0;
-	border-left: 3px solid transparent;
-	border-radius: 0px;
-}
-
-.email .nav.nav-pills.nav-stacked > li.active > a,
-.email .nav.nav-pills.nav-stacked > li.active > a:hover {
-	background-color: #f6f6f6;
-	border-left-color: #3c8dbc;
-	color: #444;
-}
-
-.email .nav.nav-pills.nav-stacked > li.header {
-	color: #777;
-	text-transform: uppercase;
-	position: relative;
-	padding: 0px 0 10px 0;
-}
-
-.email table {
-	font-weight: 600;
-}
-
-.email table a {
-	color: #666;
-}
-
-.email table tr.read > td {
-	background-color: #f6f6f6;
-}
-
-.email table tr.read > td {
-	font-weight: 400;
-}
-
-.email table tr td > i.fa {
-	font-size: 1.2em;
-	line-height: 1.5em;
-	text-align: center;
-}
-
-.email table tr td > i.fa-star {
-	color: #f39c12;
-}
-
-.email table tr td > i.fa-bookmark {
-	color: #e74c3c;
-}
-
-.email table tr > td.action {
-	padding-left: 0px;
-	padding-right: 2px;
-}
-
-.grid {
-    position: relative;
-    width: 100%;
-    background: #fff;
-    color: #666666;
-    border-radius: 2px;
-    margin-bottom: 25px;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-
-.grid .grid-header:after {
-    clear: both;
-}
-
-.grid .grid-header span,
-.grid .grid-header > .fa {
-    display: inline-block;
-    margin: 0;
-    font-weight: 300;
-    font-size: 1.5em;
-    float: left;
-}
-
-.grid .grid-header span {
-    padding: 0 5px;
-}
-
-.grid .grid-header > .fa {
-    padding: 5px 10px 0 0;
-}
-
-.grid .grid-header > .grid-tools {
-    padding: 4px 10px;
-}
-
-.grid .grid-header > .grid-tools a {
-    color: #999999;
-    padding-left: 10px;
-    cursor: pointer;
-}
-
-.grid .grid-header > .grid-tools a:hover {
-    color: #666666;
-}
-
-.grid .grid-body {
-    padding: 15px 20px 15px 20px;
-    font-size: 0.9em;
-    line-height: 1.9em;
-}
-
-.grid .full {
-    padding: 0 !important;
-}
-
-.grid .transparent {
-    box-shadow: none !important;
-    margin: 0px !important;
-    border-radius: 0px !important;
-}
-
-.grid.top.black > .grid-header {
-    border-top-color: #000000 !important;
-}
-
-.grid.bottom.black > .grid-body {
-    border-bottom-color: #000000 !important;
-}
-
-.grid.top.blue > .grid-header {
-    border-top-color: #007be9 !important;
-}
-
-.grid.bottom.blue > .grid-body {
-    border-bottom-color: #007be9 !important;
-}
-
-.grid.top.green > .grid-header {
-    border-top-color: #00c273 !important;
-}
-
-.grid.bottom.green > .grid-body {
-    border-bottom-color: #00c273 !important;
-}
-
-.grid.top.purple > .grid-header {
-    border-top-color: #a700d3 !important;
-}
-
-.grid.bottom.purple > .grid-body {
-    border-bottom-color: #a700d3 !important;
-}
-
-.grid.top.red > .grid-header {
-    border-top-color: #dc1200 !important;
-}
-
-.grid.bottom.red > .grid-body {
-    border-bottom-color: #dc1200 !important;
-}
-
-.grid.top.orange > .grid-header {
-    border-top-color: #f46100 !important;
-}
-
-.grid.bottom.orange > .grid-body {
-    border-bottom-color: #f46100 !important;
-}
-
-.grid.no-border > .grid-header {
-    border-bottom: 0px !important;
-}
-
-.grid.top > .grid-header {
-    border-top-width: 4px !important;
-    border-top-style: solid !important;
-}
-
-.grid.bottom > .grid-body {
-    border-bottom-width: 4px !important;
-    border-bottom-style: solid !important;
-}
-</style>
-<script type="text/javascript">
-
-</script>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
 
     
   </main>
@@ -1285,7 +533,7 @@ body{
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="copyright">
-      &copy; Copyright <strong><span>MyDashBoard</span></strong>. All Rights Reserved
+      © Copyright <strong><span>MyDashBoard</span></strong>. All Rights Reserved
     </div>
   </footer>
 
@@ -1302,6 +550,6 @@ body{
   <script src="..\assets\js\panel.js"></script>
   
 
-</body>
 
-</html>
+
+</body></html>

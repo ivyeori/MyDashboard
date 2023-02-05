@@ -194,12 +194,11 @@ require "../login/protect.php";
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
-      <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link " href="./">
-          <i class="bi bi-grid"></i>
-          <i class="ri-dashboard-line"></i> <span>Dashboard</span>
-        </a>
-      </li><!-- End Dashboard Nav -->
+          
+        <i class="ri-dashboard-line"></i> <span>Dashboard</span>
+        </a><!-- End Dashboard Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="files.php">
