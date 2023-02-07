@@ -369,7 +369,7 @@
                                                                     </div>
 
                                                                     <div class="flex-1">
-                                                                        <h5 class="font-size-15 mb-1">One Drive</h5>
+                                                                        <h5 class="font-size-15 mb-1">iCloud</h5>
                                                                         <a href="" class="font-size-13 text-muted"><u>View Folder</u></a>
                                                                     </div>
                                                                 
@@ -446,8 +446,8 @@
                                                                         <h5 class="font-size-15 text-truncate mb-1"><a href="javascript: void(0);" class="text-body">Sketch Design</a></h5>
                                                                         <p class="text-muted text-truncate mb-0">235 Files</p>
                                                                     </div>
-                                                                    <div class="align-self-end ms-2">
-                                                                        <p class="text-muted mb-0 font-size-13"><i class="ri-time-line"></i> 23 min ago</p>
+                                                                    <div class="align-self-end ms-2 ">
+                                                                        <p class="text-muted mb-0 font-size-13"><i class="ri-time-line span"></i> 23 min ago</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -698,13 +698,17 @@
                                 </div>
 
                             </div>
-                            <div class="col-xl-3">
+                            <div class="col">
                                 <div class="card">
                                     <div class="card-body">
                                             <div class="" style="position: relative;">
-                                                <h5 class="font-size-16 pt-4">Usage Storage</h5>
-												<br>
-                                                <div id="stroked_radialbar" data-colors="[&quot;#3b76e1&quot;]" class="apex-charts" dir="ltr" style="min-height: 251.775px;"><div id="apexcharts8pwe01ltg" class="apexcharts-canvas apexcharts8pwe01ltg apexcharts-theme-light" style="width: 216px; height: 251.775px;"><svg id="SvgjsSvg1066" width="216" height="251.775" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, -20)" style="background: transparent;"><g id="SvgjsG1068" class="apexcharts-inner apexcharts-graphical" transform="translate(-14, 0)"><defs id="SvgjsDefs1067"><clipPath id="gridRectMask8pwe01ltg"><rect id="SvgjsRect1070" width="252" height="270" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMask8pwe01ltg"><rect id="SvgjsRect1071" width="250" height="272" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><linearGradient id="SvgjsLinearGradient1076" x1="1" y1="0" x2="0" y2="1"><stop id="SvgjsStop1077" stop-opacity="1" stop-color="rgba(242,242,242,1)" offset="0"></stop><stop id="SvgjsStop1078" stop-opacity="1" stop-color="rgba(206,206,206,1)" offset="0.5"></stop><stop id="SvgjsStop1079" stop-opacity="1" stop-color="rgba(206,206,206,1)" offset="0.65"></stop><stop id="SvgjsStop1080" stop-opacity="1" stop-color="rgba(242,242,242,1)" offset="0.91"></stop></linearGradient><linearGradient id="SvgjsLinearGradient1088" x1="1" y1="0" x2="0" y2="1"><stop id="SvgjsStop1089" stop-opacity="1" stop-color="rgba(59,118,225,1)" offset="0"></stop><stop id="SvgjsStop1090" stop-opacity="1" stop-color="rgba(50,100,191,1)" offset="0.5"></stop><stop id="SvgjsStop1091" stop-opacity="1" stop-color="rgba(50,100,191,1)" offset="0.65"></stop><stop id="SvgjsStop1092" stop-opacity="1" stop-color="rgba(59,118,225,1)" offset="0.91"></stop></linearGradient></defs><g id="SvgjsG1072" class="apexcharts-radialbar"><g id="SvgjsG1073"><g id="SvgjsG1074" class="apexcharts-tracks"><g id="SvgjsG1075" class="apexcharts-radialbar-track apexcharts-track" rel="1"><path id="apexcharts-radialbarTrack-0" d="M 70.8508748874921 175.14912511250787 A 73.75000000000001 73.75000000000001 0 1 1 175.1491251125079 175.14912511250787" fill="none" fill-opacity="1" stroke="rgba(242,242,242,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="22.795000000000005" stroke-dasharray="0" class="apexcharts-radialbar-area" data:pathOrig="M 70.8508748874921 175.14912511250787 A 73.75000000000001 73.75000000000001 0 1 1 175.1491251125079 175.14912511250787"></path></g></g><g id="SvgjsG1082"><g id="SvgjsG1087" class="apexcharts-series apexcharts-radial-series" seriesName="64xGBxused" rel="1" data:realIndex="0"><path id="SvgjsPath1093" d="M 70.8508748874921 175.14912511250787 A 73.75000000000001 73.75000000000001 0 1 1 192.73199495044963 98.9893486087847" fill="none" fill-opacity="0.85" stroke="url(#SvgjsLinearGradient1088)" stroke-opacity="1" stroke-linecap="butt" stroke-width="23.500000000000004" stroke-dasharray="4" class="apexcharts-radialbar-area apexcharts-radialbar-slice-0" data:angle="206" data:value="76.2" index="0" j="0" data:pathOrig="M 70.8508748874921 175.14912511250787 A 73.75000000000001 73.75000000000001 0 1 1 192.73199495044963 98.9893486087847"></path></g><circle id="SvgjsCircle1083" r="57.35250000000001" cx="123" cy="123" class="apexcharts-radialbar-hollow" fill="transparent"></circle><g id="SvgjsG1084" class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)" style="opacity: 1;"><text id="SvgjsText1085" font-family="Helvetica, Arial, sans-serif" x="123" y="243" text-anchor="middle" dominant-baseline="auto" font-size="16px" font-weight="400" fill="#3b76e1" class="apexcharts-text apexcharts-datalabel-label" style="font-family: Helvetica, Arial, sans-serif;">64 GB used</text><text id="SvgjsText1086" font-family="Helvetica, Arial, sans-serif" x="123" y="215" text-anchor="middle" dominant-baseline="auto" font-size="20px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-datalabel-value" style="font-family: Helvetica, Arial, sans-serif;">76.2%</text></g></g></g></g><line id="SvgjsLine1094" x1="0" y1="0" x2="246" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1095" x1="0" y1="0" x2="246" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line></g><g id="SvgjsG1069" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend"></div></div></div> 
+                                                <h5 class="font-size-16 pt-4 d-flex pt-3 justify-content-center">Usage Storage</h5>
+												
+                                                <div id="stroked_radialbar" data-colors="[&quot;#3b76e1&quot;]" class="apex-charts mt-4  d-flex justify-content-center" dir="ltr" style=" min-height: 251.775px;">
+												<div id="apexcharts8pwe01ltg" class="apexcharts-canvas  d-flex justify-content-center apexcharts8pwe01ltg apexcharts-theme-light" style="width: 216px; height: 251.775px;">
+												<svg id="SvgjsSvg1066" width="auto" height="251.775" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, -20)" style="background: transparent;"><g id="SvgjsG1068" class="apexcharts-inner apexcharts-graphical" transform="translate(-14, 0)"><defs id="SvgjsDefs1067"><clipPath id="gridRectMask8pwe01ltg"><rect id="SvgjsRect1070" width="252" height="270" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMask8pwe01ltg"><rect id="SvgjsRect1071" width="250" height="272" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><linearGradient id="SvgjsLinearGradient1076" x1="1" y1="0" x2="0" y2="1"><stop id="SvgjsStop1077" stop-opacity="1" stop-color="rgba(242,242,242,1)" offset="0"></stop><stop id="SvgjsStop1078" stop-opacity="1" stop-color="rgba(206,206,206,1)" offset="0.5"></stop><stop id="SvgjsStop1079" stop-opacity="1" stop-color="rgba(206,206,206,1)" offset="0.65"></stop><stop id="SvgjsStop1080" stop-opacity="1" stop-color="rgba(242,242,242,1)" offset="0.91"></stop></linearGradient><linearGradient id="SvgjsLinearGradient1088" x1="1" y1="0" x2="0" y2="1"><stop id="SvgjsStop1089" stop-opacity="1" stop-color="rgba(59,118,225,1)" offset="0"></stop><stop id="SvgjsStop1090" stop-opacity="1" stop-color="rgba(50,100,191,1)" offset="0.5"></stop><stop id="SvgjsStop1091" stop-opacity="1" stop-color="rgba(50,100,191,1)" offset="0.65"></stop><stop id="SvgjsStop1092" stop-opacity="1" stop-color="rgba(59,118,225,1)" offset="0.91"></stop></linearGradient></defs><g id="SvgjsG1072" class="apexcharts-radialbar"><g id="SvgjsG1073"><g id="SvgjsG1074" class="apexcharts-tracks"><g id="SvgjsG1075" class="apexcharts-radialbar-track apexcharts-track" rel="1"><path id="apexcharts-radialbarTrack-0" d="M 70.8508748874921 175.14912511250787 A 73.75000000000001 73.75000000000001 0 1 1 175.1491251125079 175.14912511250787" fill="none" fill-opacity="1" stroke="rgba(242,242,242,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="22.795000000000005" stroke-dasharray="0" class="apexcharts-radialbar-area" data:pathOrig="M 70.8508748874921 175.14912511250787 A 73.75000000000001 73.75000000000001 0 1 1 175.1491251125079 175.14912511250787"></path></g></g><g id="SvgjsG1082"><g id="SvgjsG1087" class="apexcharts-series apexcharts-radial-series" seriesName="64xGBxused" rel="1" data:realIndex="0"><path id="SvgjsPath1093" d="M 70.8508748874921 175.14912511250787 A 73.75000000000001 73.75000000000001 0 1 1 192.73199495044963 98.9893486087847" fill="none" fill-opacity="0.85" stroke="url(#SvgjsLinearGradient1088)" stroke-opacity="1" stroke-linecap="butt" stroke-width="23.500000000000004" stroke-dasharray="4" class="apexcharts-radialbar-area apexcharts-radialbar-slice-0" data:angle="206" data:value="76.2" index="0" j="0" data:pathOrig="M 70.8508748874921 175.14912511250787 A 73.75000000000001 73.75000000000001 0 1 1 192.73199495044963 98.9893486087847"></path></g><circle id="SvgjsCircle1083" r="57.35250000000001" cx="123" cy="123" class="apexcharts-radialbar-hollow" fill="transparent"></circle><g id="SvgjsG1084" class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)" style="opacity: 1;"><text id="SvgjsText1085" font-family="Helvetica, Arial, sans-serif" x="123" y="243" text-anchor="middle" dominant-baseline="auto" font-size="16px" font-weight="400" fill="#3b76e1" class="apexcharts-text apexcharts-datalabel-label" style="font-family: Helvetica, Arial, sans-serif;">64 GB used</text><text id="SvgjsText1086" font-family="Helvetica, Arial, sans-serif" x="123" y="215" text-anchor="middle" dominant-baseline="auto" font-size="20px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-datalabel-value" style="font-family: Helvetica, Arial, sans-serif;">76.2%</text></g></g></g></g><line id="SvgjsLine1094" x1="0" y1="0" x2="246" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1095" x1="0" y1="0" x2="246" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line></g><g id="SvgjsG1069" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend"></div>
+											</div>
+										</div> 
                                                 <div>
                                                     <h5 class="font-size-16 mb-3">Recent Files</h5>
                                                     <div class="card border shadow-none mb-2">
@@ -713,7 +717,7 @@
                                                                 <div class="d-flex align-items-center">
                                                                     <div class="avatar align-self-center me-3">
                                                                         <div class="avatar-title rounded bg-soft-success text-success font-size-24">
-                                                                            <i class="ri-image-2-line"></i>
+                                                                            <i class="ri-image-2-line h3"></i>
                                                                         </div>
                                                                     </div>
                 
@@ -736,7 +740,7 @@
                                                                 <div class="d-flex align-items-center">
                                                                     <div class="avatar align-self-center me-3">
                                                                         <div class="avatar-title rounded bg-soft-danger text-danger font-size-24">
-                                                                            <i class="ri-play-circle-line"></i>
+                                                                            <i class="ri-play-circle-line h3"></i>
                                                                         </div>
                                                                     </div>
             
@@ -759,12 +763,12 @@
                                                                 <div class="d-flex align-items-center">
                                                                     <div class="avatar align-self-center me-3">
                                                                         <div class="avatar-title rounded bg-soft-info text-info font-size-24">
-                                                                            <i class="ri-album-line"></i>
+                                                                            <i class="ri-album-line h3"></i>
                                                                         </div>
                                                                     </div>
             
                                                                     <div class="overflow-hidden me-auto">
-                                                                        <h5 class="font-size-15 text-truncate mb-1">Music</h5>
+                                                                        <h5 class="font-size-15 text-truncate mb-1 ">Music</h5>
                                                                         <p class="text-muted text-truncate mb-0">21 Files</p>
                                                                     </div>
             
@@ -782,7 +786,7 @@
                                                                 <div class="d-flex align-items-center">
                                                                     <div class="avatar align-self-center me-3">
                                                                         <div class="avatar-title rounded bg-soft-primary text-primary font-size-24">
-                                                                            <i class="ri-file-text-line"></i>
+                                                                            <i class="ri-file-text-line h3"></i>
                                                                         </div>
                                                                     </div>
             
@@ -805,7 +809,7 @@
                                                                 <div class="d-flex align-items-center">
                                                                     <div class="avatar align-self-center me-3">
                                                                         <div class="avatar-title rounded bg-soft-warning text-warning font-size-24">
-                                                                            <i class="ri-folder-2-fill"></i>
+                                                                            <i class="ri-folder-2-fill h3"></i>
                                                                         </div>
                                                                     </div>
             
