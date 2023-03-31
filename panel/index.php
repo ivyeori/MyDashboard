@@ -139,7 +139,7 @@ require "../login/protect.php";
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="404.php">
                 <i class="bi bi-person"></i>
                 <span>My Profile</span>
               </a>
@@ -149,7 +149,7 @@ require "../login/protect.php";
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="404.php">
                 <i class="bi bi-gear"></i>
                 <span>Account Settings</span>
               </a>
@@ -159,7 +159,7 @@ require "../login/protect.php";
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+              <a class="dropdown-item d-flex align-items-center" href="404.php">
                 <i class="bi bi-question-circle"></i>
                 <span>Need Help?</span>
               </a>
@@ -207,13 +207,13 @@ require "../login/protect.php";
         </a>
       </li><!-- End Blank Page Nav -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-blank.html">
+        <a class="nav-link collapsed" href="404.php">
           
           <i class="ri-mail-unread-line"></i><span>Mail</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-blank.html">
+        <a class="nav-link collapsed" href="404.php">
           
         <i class="ri-message-line"></i></i><span>Messenger</span>
         </a>
@@ -296,7 +296,7 @@ require "../login/protect.php";
 
 
 <div class="card-body">
-  <h5 class="card-title">Ungelesene Mails</span></h5>
+  <h5 class="card-title">Ungelesene Mails *click*</span></h5>
 
   <div class="d-flex align-items-center">
     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -587,7 +587,7 @@ require "../login/protect.php";
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><i class="ri-code-box-line"></i><a href="javascript: void(0);" class="text-dark fw-medium"><i class="bx bxs-file font-size-16 align-middle text-primary "></i> starter-page.html</a></td>
+                                                                    <td><i class="ri-code-box-line"></i><a href="javascript: void(0);" class="text-dark fw-medium"><i class="bx bxs-file font-size-16 align-middle text-primary "></i> 404.php</a></td>
                                                                     <td>08-10-2020, 03:22</td>
                                                                     <td>11 KB</td>
                                                                     <td>
@@ -631,25 +631,25 @@ require "../login/protect.php";
                 </div>
 
                 <div class="post-item clearfix">
-                  <img scr="..\assets/img/news-2.jpg" alt="">
+                  
                   <h4><a href="#">Quidem autem et impedit</a></h4>
                   <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img scr="..\assets/img/news-3.jpg" alt="">
+                  
                   <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
                   <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img scr="..\assets/img/news-4.jpg" alt="">
+                 
                   <h4><a href="#">Laborum corporis quo dara net para</a></h4>
                   <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
                 </div>
 
                 <div class="post-item clearfix pb-3">
-                  <img scr="..\assets/img/news-5.jpg" alt="">
+                  
                   <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
                   <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
                 </div>

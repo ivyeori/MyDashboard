@@ -42,24 +42,29 @@ require "check.php";
 <body>
 
   
-  <header id="header" class="fixed-top header-inner-pages">
-    <div class="container d-flex align-items-center">
+<header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <h1 class="logo me-auto"><a href="../index.php">MyDashboard</a></h1>
-     
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.svg" alt="">
+        <span>Mydashboard</span>
+      </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="../index.php">Home</a></li>
-          <li><a class="nav-link scrollto" href="../index.php#about">About</a></li>
-          <li><a class="nav-link scrollto" href="../index.php#services">Services</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
           
-          
-         
-          <li><a class="getstarted scrollto" href="#about">Login</a></li>
+          <li><a class="getstarted scrollto" href="./login"><?php
+    if (isset($_COOKIE['PHPSESSID'])) {
+      echo "Dashboard";
+    } else {
+      echo "Login";
+    }
+  ?></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
+      </nav><!-- .navbar -->
 
     </div>
   </header>

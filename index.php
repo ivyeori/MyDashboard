@@ -5,67 +5,42 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mydashboard.de</title>
+  <title>Mydashboard - Index | Deine Moderne Lösung Zum Arbeiten</title>
   <meta content="" name="description">
+
   <meta content="" name="keywords">
 
-  
-  <link href="./assets/img/favicon.png" rel="icon">
-  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <script defer src="./assets/js/all.js"></script>
-
-  
-  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
- 
-  
-  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="./assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  
-  <link href="./assets/css/style.css" rel="stylesheet">
-  
+  <link href="assets/img/favicon.svg" rel="icon">
   
 
   
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-<?php if (isset($_GET['logout']) && $_GET['logout'] == 1) { ?>
-    <script>
-      $(document).ready(function() {
-        $('#toast').toast('show');
-      });
-    </script>
-    <div class="toast" id="toast">
-      <div class="toast-header">
-        <strong class="mr-auto">Notice</strong>
-        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
-      </div>
-      <div class="toast-body">
-        You have been logged out.
-      </div>
-    </div>
-  <?php } ?>
- 
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
-      
-      <h1 class="logo me-auto"><a href="./">Mydashboard</a></h1>
-     
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.svg" alt="">
+        <span>Mydashboard</span>
+      </a>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
           
-       
           <li><a class="getstarted scrollto" href="./login"><?php
     if (isset($_COOKIE['PHPSESSID'])) {
       echo "Dashboard";
@@ -74,270 +49,307 @@
     }
   ?></a></li>
         </ul>
-        <i class="ri-menu-4-line mobile-nav-toggle"></i>
-      </nav>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
     </div>
-  </header>
-  <section id="hero" class="d-flex align-items-center">
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
 
     <div class="container">
       <div class="row">
-        
-          <h1>Deine Lösung für produktiveres Arbeiten.</h1>
-          <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur enim, accusantium sit id voluptatem at laudantium, voluptates unde, aspernatur rerum a! Unde quasi animi, ipsa optio eaque eligendi sequi quod.</h2>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-           
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Deine Lösung für produktiveres Arbeiten.</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Mit MyDashBoard kannst du deinen Arbeitsalltag vereinfachen.</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
             
           </div>
         </div>
-        
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
 
-  </section>
+  </section><!-- End Hero -->
 
   <main id="main">
-
-   
+    
     
 
-   
-    <section id="about" class="about">
+    
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Über uns</h2>
-        </div>
-
-        <div class="row content ">
-          <div class="col-lg-6">
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            
-          </div>
-           
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section id="why-us" class="why-us section-bg">
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="row ">
-        <div class="section-title ">
-          <h2>Einfach Einrichtung für alle</h2>
-        </div>
-          <div class="col-lg-7 mx-auto d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
+        <header class="section-header">
           
+          <p>Einfache Einrichtung für Alle!</p>
+        </header>
 
-            <div class="accordion-list w-100 col-md-8  mx-auto">
-              <ul>
-                <li class="shadow-sm">
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Erstell dir einen Account <i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>
-                     Dies erfolgt in wenigen Schritten, damit Du es einfach hast! Du brauchst eine E-Mail und es kann schon losgehen!
-                    </p>
-                  </div>
-                </li>
+        
 
-                <li class="shadow-sm">
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Verbinde deine *Füllwort* <i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Verbinde deine Accounts, damit wir Dir besser helfen können beim Arbeiten. Egal ob Google oder Microsoft Accounts, du kannst alles bei uns anlegen.
-                    </p>
-                  </div>
-                </li>
+        <!-- Feature Tabs -->
+        <div class="row feture-tabs" data-aos="fade-up">
+          <div class="col-lg-6">
+            <h3>Die Einrichtung von MyDashBoard benötigt nur 3 Schritte</h3>
 
-                <li class="shadow-sm">
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Loslegen! <i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Ab jetzt kannst du MyDashboard einfach nutzen. Egal ob privat oder auf der Arbeit, du wirst produktiver im Alltag!
-                    </p>
-                  </div>
-                </li>
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-3">
+              <li>
+                <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Schritt 1</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab2">Schritt 2</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab3">Fertig!</a>
+              </li>
+            </ul><!-- End Tabs -->
 
-              </ul>
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <div class="tab-pane fade show active" id="tab1">
+                
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Erstell dir einen Account</h4>
+                </div>
+                <p>Dies erfolgt in wenigen Schritten, damit Du es einfach hast! Du brauchst eine E-Mail und es kann schon losgehen!</p>
+                
+              </div><!-- End Tab 1 Content -->
+
+              <div class="tab-pane fade show" id="tab2">
+                
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Verbinde deine Accounts</h4>
+                </div>
+                <p>Verbinde deine Accounts, damit wir Dir besser helfen können beim Arbeiten. Egal ob Google oder Microsoft Accounts, du kannst alles bei uns anlegen.</p>
+                
+              </div><!-- End Tab 2 Content -->
+
+              <div class="tab-pane fade show" id="tab3">
+                
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Du kannst jetzt einfach loslegen</h4>
+                </div>
+                <p>Ab jetzt kannst du MyDashboard einfach nutzen. Egal ob privat oder auf der Arbeit, du wirst produktiver im Alltag!</p>
+                
+              </div><!-- End Tab 3 Content -->
+
             </div>
 
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/features-2.png" class="img-fluid" alt="">
+          </div>
+
+        </div><!-- End Feature Tabs -->
+
+        
+
+      </div>
+
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          
+          <p>Was bietet MyDashBoard?</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="ri-mail-line icon"></i>
+              <h3>Mail Manager</h3>
+              <p>Du kannst einfach deinen Gmail, Outlook oder Deinen Arbeits Mail Account verknüpfen!</p>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="ri-file-cloud-line icon"></i>
+              <h3>Cloud Manager</h3>
+              <p>Bei MyDashBoard kannst du einfach deine Cloud hinzufügen. Egal ob iCloud oder Google Drive.</p>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="ri-message-2-line icon"></i>
+              <h3>Chat Funktion</h3>
+              <p>Um dich mit deinen Arbeitskollegen zu unterhalten, bieten wir eine Chat Funktion. So hast du alles in einem Dashboard!</p>
+              
+            </div>
           </div>
 
          
 
+        </div>
+
       </div>
-    </section>
+
+    </section><!-- End Services Section -->
 
     
-    <section id="services" class="services section-bg">
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="ri-dribbble-line"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="ri-file-line"></i></div>
-              <h4><a href="">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="ri-pie-chart-2-fill"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-            <div class="icon-box">
-              <div class="icon"><i class="ri-stack-line"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3>Probleme oder Fragen zu MyDashboard?</h3>
-            <p> Kontaktiere gerne unseren Support, damit wir Dir weiterhelfen können!</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="./support.php">Support</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-   
-   
-
-    
-    <section id="faq" class="faq section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title" id="faq">
-          <h2>Frequently Asked Questions</h2>
+        <header class="section-header">
          
-        </div>
+          <p>Häufige Fragen</p>
+        </header>
 
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="ri-question-fill icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Bleibt MyDashboard für immer kostenlos? <i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                  Für <strong>Privatkunden</strong>  bleibt MyDashboard immer kostenlos! Firmen können sich ein besonderes Angebot einholen.
-                </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- F.A.Q List 1-->
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                  Bleibt MyDashboard für immer kostenlos?
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse " data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                  Für Privatkunden bleibt MyDashboard immer kostenlos! Firmen können sich ein besonderes Angebot einholen.
+                  </div>
+                </div>
               </div>
-            </li>
 
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="ri-question-fill icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Wie einfach ist die Einrichtung von MyDashboard? <i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Die Einrichtung kann schon über <strong>3 Schritten</strong> erfolgen! 
-                </p>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                  </button>
+                </h2>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
               </div>
-            </li>
 
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="ri-question-fill icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                </p>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </div>
+                </div>
               </div>
-            </li>
 
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="ri-question-fill icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <!-- F.A.Q List 2-->
+            <div class="accordion accordion-flush" id="faqlist2">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                  Wie einfach ist die Einrichtung von MyDashboard?
+                  </button>
+                </h2>
+                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                  Die Einrichtung kann schon über 3 Schritten erfolgen!
+                  </div>
+                </div>
               </div>
-            </li>
 
-            
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                  </button>
+                </h2>
+                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                  </div>
+                </div>
+              </div>
 
-          </ul>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                    Varius vel pharetra vel turpis nunc eget lorem dolor?
+                  </button>
+                </h2>
+                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
 
       </div>
-    </section>
-    <!-- Remove the container if you want to extend the Footer to full width. -->
 
-
-  <footer class="bg-dark text-center text-white">
- 
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: #354A54;">
-    © 2023 Copyright:
-    <a class="text-white" href="https://Mydashboard.de/">Mydashboard.de</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-  
-
-<!-- End of .container -->
-    
-  </main>
-
-  
-  
+    </section><!-- End F.A.Q Section -->
 
     
 
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    
+
+    
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Mydashboard</span></strong>. All Rights Reserved | Designed by fdai7636
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="ri-arrow-drop-up-line"></i></a>
+
+  <!-- Vendor JS Files -->
   
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   
 
-  
-  <script src="./assets/vendor/aos/aos.js"></script>
-  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
- 
-  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
-  
-
-  
-  <script src="./assets/js/main.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 

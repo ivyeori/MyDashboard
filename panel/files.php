@@ -129,7 +129,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="404.php">
                 <i class="bi bi-person"></i>
                 <span>My Profile</span>
               </a>
@@ -139,7 +139,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="404.php">
                 <i class="bi bi-gear"></i>
                 <span>Account Settings</span>
               </a>
@@ -149,7 +149,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+              <a class="dropdown-item d-flex align-items-center" href="404.php">
                 <i class="bi bi-question-circle"></i>
                 <span>Need Help?</span>
               </a>
@@ -165,7 +165,7 @@
                 <i class="bi bi-box-arrow-right"></i>
                 
                
-                <span type="submit" value="Sign Out"> Sign out </span>
+                <span type="submit"  value="Sign Out"> Sign out </span>
                
 </button>
               </form>
@@ -198,13 +198,13 @@
         </a>
       </li><!-- End Blank Page Nav -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-blank.html">
+        <a class="nav-link collapsed" href="404.php">
           
           <i class="ri-mail-unread-line"></i><span>Mail</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-blank.html">
+        <a class="nav-link collapsed" href="404.php">
           
         <i class="ri-message-line"></i></i><span>Messenger</span>
         </a>
@@ -430,14 +430,10 @@
                                                                     </div>
                                                                     <div class="avatar-group">
                                                                         <div class="avatar-group-item">
-                                                                            <a href="javascript: void(0);" class="d-inline-block">
-                                                                                <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                            </a>
+                                                                            
                                                                         </div>
                                                                         <div class="avatar-group-item">
-                                                                            <a href="javascript: void(0);" class="d-inline-block">
-                                                                                <img src="assets/images/users/avatar-6.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                            </a>
+                                                                           
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -702,7 +698,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                             <div class="" style="position: relative;">
-                                                <h5 class="font-size-16 pt-4 d-flex pt-3 justify-content-center">Usage Storage</h5>
+                                                <h5 class="font-size-16 pt-4 d-flex pt-3 justify-content-center">Used Storage</h5>
 												
                                                 <div id="stroked_radialbar" data-colors="[&quot;#3b76e1&quot;]" class="apex-charts mt-4  d-flex justify-content-center" dir="ltr" style=" min-height: 251.775px;">
 												<div id="apexcharts8pwe01ltg" class="apexcharts-canvas  d-flex justify-content-center apexcharts8pwe01ltg apexcharts-theme-light" style="width: 216px; height: 251.775px;">
